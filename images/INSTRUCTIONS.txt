@@ -1,0 +1,82 @@
+HARIIKE STYLES - IMAGE SETUP INSTRUCTIONS
+==========================================
+
+To complete your website setup, please save your fashion images in this folder 
+with the following exact names:
+
+BANNER IMAGES (Hero Carousel - Top of Home Page):
+--------------------------------------------------
+1. banner1.jpg - Black off-shoulder dress with gold beading
+2. banner2.jpg - Green dress with textured bodice  
+3. banner3.jpg - Green and white patterned dress with green coat
+
+GALLERY IMAGES (Welcome Section - Middle of Home Page):
+--------------------------------------------------------
+4. gallery1.jpg - Black elegant gown with gold bracelets
+5. gallery2.jpg - Red beaded evening gown
+6. gallery3.jpg - Silver sequin dress
+7. gallery4.jpg - Blue beaded gown with blue tulle
+8. gallery5.jpg - Purple/silver beaded dress with purple draping
+9. gallery6.jpg - Orange feathered sleeve gown with piano
+
+IMPORTANT:
+- Save all images as .jpg format (or .png)
+- Use the EXACT filenames listed above
+- Place them directly in this "images" folder
+- Recommended dimensions:
+  * Banners: 1280px × 558px
+  * Gallery: 341-354px width, various heights
+
+After saving the images, refresh your browser (F5 or Ctrl+R) to see them 
+display on your website!
+
+CREATIVE DIRECTOR IMAGE (About Page):
+--------------------------------------
+10. director.jpg - Professional photo of Morayo Oshodi in burgundy suit
+
+LOGO IMAGE (Navigation Bar - All Pages):
+-----------------------------------------
+11. logo.png - Hariike Styles logo (script "Hariike" + line + "STYLES", gold color, transparent background)
+
+CONSULTATION PAGE IMAGE:
+------------------------
+12. consultation.jpg - Black and white striped sequin halter dress
+
+COLLECTION PAGE BANNER:
+-----------------------
+13. collection-banner.jpg - Colorful dress with blue/orange pattern and yellow flower accessories
+
+COLLECTION IMAGES (Collection Page - Main Gallery):
+----------------------------------------------------
+Two images per dress (users can navigate between them with arrow buttons):
+
+SUMMER RAIN DRESS (₦265,000):
+14. summer-rain-1.jpg
+15. summer-rain-2.jpg
+
+NOVA 001 (₦218,000):
+16. nova-001-1.jpg
+17. nova-001-2.jpg
+
+NOVA 002 (₦211,000):
+18. nova-002-1.jpg
+19. nova-002-2.jpg
+
+TIARA DRESS (₦120,000):
+20. tiara-1.jpg
+21. tiara-2.jpg
+
+THE RIPPLE DRESS (₦250,000):
+22. ripple-1.jpg
+23. ripple-2.jpg
+
+BLOOM DRESS (₦186,000):
+24. bloom-1.jpg
+25. bloom-2.jpg
+
+VELORA DRESS (Price on Request):
+26. velora-1.jpg
+27. velora-2.jpg
+
+TOTAL IMAGES NEEDED: 27 images (3 banners + 6 gallery + 1 director + 1 logo + 1 consultation + 1 collection banner + 14 collection items)
+

@@ -1,0 +1,45 @@
+HARIIKE STYLES LOGO SETUP
+=========================
+
+To complete your website branding, save the Hariike Styles logo:
+
+LOGO FILE:
+----------
+Save as: logo.png
+
+The logo you provided shows:
+- "Hariike" in elegant script/cursive font
+- Horizontal line separator
+- "STYLES" in bold, spaced uppercase letters
+- Gold/tan color (#C77400 or similar)
+
+RECOMMENDED FORMAT:
+-------------------
+- File type: PNG (with transparent background)
+- Dimensions: At least 500px wide for quality
+- The website will auto-resize to fit (70px height on desktop, 50px on mobile)
+
+SAVE LOCATION:
+--------------
+C:\Users\USER\Desktop\Hariike Web\images\logo.png
+
+After saving the logo:
+1. Make sure the filename is exactly "logo.png" (lowercase)
+2. Refresh your browser (F5 or Ctrl+R)
+3. The logo will appear in the navigation on all pages!
+
+The logo is perfectly centered in the navigation with menu items balanced on both sides:
+- Left side: Home, About, Our Services
+- Center: LOGO
+- Right side: Collection, Book a Consultation
+
+
+
+
+
+
+
+
+
+
+
