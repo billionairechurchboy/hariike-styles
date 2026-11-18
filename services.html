@@ -3,123 +3,234 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services - Hariike Styles</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="images/logo.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/logo.png">
-    <link rel="shortcut icon" href="images/logo.png">
+    <title>Services — Hariike Styles</title>
+    <meta name="description" content="Aso ebi, bespoke outfits, bridals and editorials by Hariike Styles.">
+    <meta name="theme-color" content="#0e0b09">
+    <meta property="og:title" content="Services — Hariike Styles">
+    <meta property="og:description" content="Aso ebi, bespoke outfits, bridals and editorials by Hariike Styles.">
+    <meta property="og:image" content="images/Banner1.jpg">
+    <link rel="icon" type="image/png" href="images/logo.png">
     <link rel="apple-touch-icon" href="images/logo.png">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="pages.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        (function (d) {
+            var s = function (k) { try { return sessionStorage.getItem(k); } catch (e) { return null; } };
+            d.classList.add('js');
+            if (s('hs-seen')) d.classList.add('seen');
+            if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                d.classList.add('motion');
+                if (s('hs-transition')) d.classList.add('arriving');
+                setTimeout(function () { if (!window.__hsReady) { d.classList.remove('motion', 'arriving'); d.classList.add('no-motion'); } }, 4000);
+            }
+        })(document.documentElement);
+    </script>
 </head>
-<body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-links left-nav">
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="about.html" class="nav-link">About</a>
-                <a href="services.html" class="nav-link active">Our Services</a>
+<body class="">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="curtain" aria-hidden="true"><img src="images/logo.png" alt="" width="1290" height="607"></div>
+    <div class="cursor" aria-hidden="true"><div class="cursor__dot"></div><div class="cursor__ring"><span class="cursor__label"></span></div></div>
+
+    <header class="site-header" data-header>
+        <div class="header-inner">
+            <nav class="nav nav--left" aria-label="Primary">
+                <a href="about.html" class="nav-link"><span><i data-text="About">About</i></span></a>
+<a href="services.html" class="nav-link" aria-current="page"><span><i data-text="Services">Services</i></span></a>
+<a href="collection.html" class="nav-link"><span><i data-text="Collection">Collection</i></span></a>
+            </nav>
+            <a href="index.html" class="brand" aria-label="Hariike Styles — home">
+                <img src="images/logo.png" alt="Hariike Styles" width="1290" height="607">
+            </a>
+            <div class="nav nav--right">
+                <a href="contact.html" class="nav-link"><span><i data-text="Contact">Contact</i></span></a>
+                <a href="consultation.html" class="btn btn--gold btn--sm" data-magnetic><span>Book a consultation</span></a>
             </div>
-            
-            <div class="logo-container">
-                <img src="images/logo.png" alt="Hariike Styles Logo" class="logo">
-            </div>
-            
-            <div class="nav-links right-nav">
-                <a href="collection.html" class="nav-link">Collection</a>
-                <a href="consultation.html" class="nav-link">Book a Consultation</a>
-            </div>
-            
-            <!-- Mobile Menu Toggle -->
-            <button class="mobile-menu-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu">
+                <span class="menu-toggle__label">Menu</span>
+                <span class="menu-toggle__lines" aria-hidden="true"><i></i><i></i></span>
             </button>
         </div>
-        
-        <!-- Mobile Menu -->
-        <div class="mobile-menu">
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="about.html" class="nav-link">About</a>
-            <a href="services.html" class="nav-link active">Our Services</a>
-            <a href="collection.html" class="nav-link">Collection</a>
-            <a href="consultation.html" class="nav-link">Book a Consultation</a>
-        </div>
-    </nav>
+    </header>
 
-    <!-- Services Content -->
-    <section class="services-main-section">
-        <div class="services-container">
-            <h2 class="services-main-title scroll-reveal">What we Offer</h2>
-            <p class="services-intro scroll-reveal">
-                Discover our range of services tailored to bring your style vision to life.<br/>
-                At Hariike Styles, every creation begins with intention and a deep understanding of our client's unique taste. We offer a personalized experience that combines craftsmanship, precision, and creativity; ensuring every look feels just as exceptional as the woman wearing it.
-            </p>
-            
-            <div class="services-grid-new scroll-reveal">
-                <div class="service-card-new">
-                    <h3>Aso Ebi</h3>
-                    <div class="service-underline"></div>
-                    <p>Coordinated and stylish pieces for every occasion</p>
-                </div>
-                
-                <div class="service-card-new">
-                    <h3>Bespoke Outfits</h3>
-                    <div class="service-underline"></div>
-                    <p>Custom made designs tailored to perfection</p>
-                </div>
-                
-                <div class="service-card-new">
-                    <h3>Bridals</h3>
-                    <div class="service-underline"></div>
-                    <p>Exquisite dresses crafted for unforgettable moments</p>
-                </div>
-                
-                <div class="service-card-new">
-                    <h3>Editorials</h3>
-                    <div class="service-underline"></div>
-                    <p>Freshly curated pieces crafted to tell stories and create striking visuals for shoots and campaigns.</p>
+    <div class="menu" id="menu" inert>
+        <div class="menu__bg"></div>
+        <nav class="menu__nav" aria-label="Mobile">
+            <a href="index.html" class="menu__link"><span class="menu__num">01</span><span class="menu__text">Home</span></a>
+<a href="about.html" class="menu__link"><span class="menu__num">02</span><span class="menu__text">About</span></a>
+<a href="services.html" class="menu__link" aria-current="page"><span class="menu__num">03</span><span class="menu__text">Services</span></a>
+<a href="collection.html" class="menu__link"><span class="menu__num">04</span><span class="menu__text">Collection</span></a>
+<a href="consultation.html" class="menu__link"><span class="menu__num">05</span><span class="menu__text">Consultation</span></a>
+<a href="contact.html" class="menu__link"><span class="menu__num">06</span><span class="menu__text">Contact</span></a>
+        </nav>
+        <div class="menu__foot">
+            <a href="mailto:Hariikestyles@gmail.com">Hariikestyles@gmail.com</a>
+            <a href="https://www.instagram.com/hariikestyles" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+        </div>
+    </div>
+
+    <main id="main">
+
+        <section class="page-hero">
+            <div class="page-hero__media" data-hero-media>
+                <img src="images/Banner2.jpg" alt="" fetchpriority="high">
+            </div>
+            <div class="container page-hero__inner">
+                <p class="crumb" data-reveal><a href="index.html">Home</a> &nbsp;/&nbsp; Services</p>
+                <h1 class="h1" style="margin-top:20px;max-width:16ch" data-split>Tailored to bring your <em>vision</em> to life.</h1>
+                <div class="page-hero__meta">
+                    <p data-reveal>Every creation begins with intention and a deep understanding of our client’s unique taste — a personal experience combining craftsmanship, precision and creativity.</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
+        <section class="section">
+            <div class="container">
+                <div class="gallery-head">
+                    <div>
+                        <span class="eyebrow" data-reveal>What we offer</span>
+                        <h2 class="h2" style="margin-top:22px" data-split>Four disciplines, <em>one standard.</em></h2>
+                    </div>
+                    <p class="muted" data-reveal>Every look should feel just as exceptional as the woman wearing it.</p>
+                </div>
+                <div class="stack">
+                    <article class="stack-card" data-stack-card>
+                        <div class="stack-card__body">
+                            <span class="stack-card__num">01 / 04</span>
+                            <div>
+                                <h3 class="stack-card__title">Aso <em>Ebi</em></h3>
+                                <p class="stack-card__desc" style="margin-top:24px">Coordinated and stylish pieces for every occasion.</p>
+                            </div>
+                            <p class="muted" style="max-width:44ch">Celebrate together, beautifully. We design cohesive aso-ebi looks for families, friends and bridal parties — each one distinct, all of them in harmony.</p>
+                        </div>
+                        <div class="frame"><img src="images/emerald-bloom-1.jpg" alt="" loading="lazy" decoding="async"></div>
+                    </article>
+
+                    <article class="stack-card" data-stack-card>
+                        <div class="stack-card__body">
+                            <span class="stack-card__num">02 / 04</span>
+                            <div>
+                                <h3 class="stack-card__title">Bespoke <em>outfits</em></h3>
+                                <p class="stack-card__desc" style="margin-top:24px">Custom made designs tailored to perfection.</p>
+                            </div>
+                            <p class="muted" style="max-width:44ch">One-of-one pieces built around you: your silhouette, your story, your occasion. Every seam is considered; every detail is yours.</p>
+                        </div>
+                        <div class="frame"><img src="images/nova-001-1.jpg" alt="" loading="lazy" decoding="async"></div>
+                    </article>
+
+                    <article class="stack-card" data-stack-card>
+                        <div class="stack-card__body">
+                            <span class="stack-card__num">03 / 04</span>
+                            <div>
+                                <h3 class="stack-card__title"><em>Bridals</em></h3>
+                                <p class="stack-card__desc" style="margin-top:24px">Exquisite dresses crafted for unforgettable moments.</p>
+                            </div>
+                            <p class="muted" style="max-width:44ch">From the first sketch to the final fitting, we create bridal looks with the artistry and precision an unforgettable day deserves.</p>
+                        </div>
+                        <div class="frame"><img src="images/bloom-1.jpg" alt="" loading="lazy" decoding="async"></div>
+                    </article>
+
+                    <article class="stack-card" data-stack-card>
+                        <div class="stack-card__body">
+                            <span class="stack-card__num">04 / 04</span>
+                            <div>
+                                <h3 class="stack-card__title"><em>Editorials</em></h3>
+                                <p class="stack-card__desc" style="margin-top:24px">Pieces that tell stories and create striking visuals.</p>
+                            </div>
+                            <p class="muted" style="max-width:44ch">Freshly curated pieces for shoots and campaigns — crafted to photograph powerfully and leave an impression.</p>
+                        </div>
+                        <div class="frame"><img src="images/ethereal-1.jpg" alt="" loading="lazy" decoding="async"></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--light">
+            <div class="container">
+                <div class="gallery-head">
+                    <div>
+                        <span class="eyebrow" data-reveal>The process</span>
+                        <h2 class="h2" style="margin-top:22px" data-split>How a piece <em>comes to life.</em></h2>
+                    </div>
+                    <a href="consultation.html" class="btn btn--dark" data-magnetic data-reveal><span>Start with a consultation</span><svg class="btn__arrow" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="1.2"/></svg></a>
+                </div>
+                <div class="process">
+                    <div class="step" data-reveal>
+                        <div class="step__num">01</div>
+                        <h3 class="step__title">Consultation</h3>
+                        <p>A personal session — physical or virtual — to explore your vision, style and occasion.</p>
+                    </div>
+
+                    <div class="step" data-reveal>
+                        <div class="step__num">02</div>
+                        <h3 class="step__title">Design & fabric</h3>
+                        <p>We refine the concept and select materials, finishes and embellishments.</p>
+                    </div>
+
+                    <div class="step" data-reveal>
+                        <div class="step__num">03</div>
+                        <h3 class="step__title">Fittings</h3>
+                        <p>Multiple fittings ensure a fit that feels made just for you — because it is.</p>
+                    </div>
+
+                    <div class="step" data-reveal>
+                        <div class="step__num">04</div>
+                        <h3 class="step__title">Delivery</h3>
+                        <p>Your finished piece, completed with care and ready for its moment.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
     <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-column">
-                <h3>Get in Touch</h3>
-                <p>Hariikestyles@gmail.com</p>
-                <p>Book a Consultation</p>
+        <div class="container">
+            <div class="footer__cta">
+                <div>
+                    <span class="eyebrow" data-reveal>Begin your piece</span>
+                    <h2 class="h1" style="margin-top:24px" data-split>Let’s create something <em>uniquely yours.</em></h2>
+                </div>
+                <a href="consultation.html" class="orb" data-magnetic data-cursor-hide><span>Book a<br>consultation</span></a>
             </div>
-            
-            <div class="footer-column">
-                <h3>Quick Links</h3>
-                <a href="about.html">About us</a>
-                <a href="services.html">Services</a>
-                <a href="collection.html">Our Collection</a>
-                <a href="consultation.html">Book a Consultation</a>
-            </div>
-            
-            <div class="footer-column">
-                <h3>Legal</h3>
-                <a href="privacy.html">Privacy</a>
-                <a href="terms.html">Terms and Conditions</a>
-                <a href="contact.html">Contact Us</a>
+            <div class="footer__grid">
+                <div class="footer__col">
+                    <p class="footer__intro">Bespoke, bridal &amp; aso-ebi couture — designing timeless elegance, one piece at a time.</p>
+                </div>
+                <div class="footer__col">
+                    <h3>Get in touch</h3>
+                    <a href="mailto:Hariikestyles@gmail.com">Hariikestyles@gmail.com</a>
+                    <a href="consultation.html">Book a consultation</a>
+                    <a href="https://www.instagram.com/hariikestyles" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+                </div>
+                <div class="footer__col">
+                    <h3>Explore</h3>
+                    <a href="about.html">About us</a>
+                    <a href="services.html">Services</a>
+                    <a href="collection.html">Our collection</a>
+                    <a href="contact.html">Contact us</a>
+                </div>
+                <div class="footer__col">
+                    <h3>Legal</h3>
+                    <a href="privacy.html">Privacy</a>
+                    <a href="terms.html">Terms &amp; conditions</a>
+                </div>
             </div>
         </div>
-        
-        <div class="footer-bottom">
-            <p>Copyright © 2025 Hariike Styles</p>
-            <p>Website designed by <a href="https://www.instagram.com/billionairechurchboy_?igsh=YnJkaGNmNDdtamp1&utm_source=qr" target="_blank" rel="noopener noreferrer">BCB Global Hub</a></p>
+        <span class="footer__mark" aria-hidden="true" data-mark>Hariike</span>
+        <div class="container">
+            <div class="footer__bottom">
+                <p>© <span data-year>2025</span> Hariike Styles. All rights reserved.</p>
+                <p>Website designed by <a href="https://www.instagram.com/billionairechurchboy_?igsh=YnJkaGNmNDdtamp1&amp;utm_source=qr" target="_blank" rel="noopener noreferrer">BCB Global Hub</a></p>
+                <a href="#main" class="to-top" data-to-top>Back to top <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M6 11V1M1 6l5-5 5 5" stroke="currentColor" stroke-width="1.2"/></svg></a>
+            </div>
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
-

@@ -3,119 +3,195 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Hariike Styles</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="images/logo.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/logo.png">
-    <link rel="shortcut icon" href="images/logo.png">
+    <title>About — Hariike Styles</title>
+    <meta name="description" content="The story of Hariike Styles and its creative director, Morayo Oshodi.">
+    <meta name="theme-color" content="#0e0b09">
+    <meta property="og:title" content="About — Hariike Styles">
+    <meta property="og:description" content="The story of Hariike Styles and its creative director, Morayo Oshodi.">
+    <meta property="og:image" content="images/Banner1.jpg">
+    <link rel="icon" type="image/png" href="images/logo.png">
     <link rel="apple-touch-icon" href="images/logo.png">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="pages.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        (function (d) {
+            var s = function (k) { try { return sessionStorage.getItem(k); } catch (e) { return null; } };
+            d.classList.add('js');
+            if (s('hs-seen')) d.classList.add('seen');
+            if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                d.classList.add('motion');
+                if (s('hs-transition')) d.classList.add('arriving');
+                setTimeout(function () { if (!window.__hsReady) { d.classList.remove('motion', 'arriving'); d.classList.add('no-motion'); } }, 4000);
+            }
+        })(document.documentElement);
+    </script>
 </head>
-<body style="background: #D1CECE;">
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-links left-nav">
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="about.html" class="nav-link active">About</a>
-                <a href="services.html" class="nav-link">Our Services</a>
+<body class="">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="curtain" aria-hidden="true"><img src="images/logo.png" alt="" width="1290" height="607"></div>
+    <div class="cursor" aria-hidden="true"><div class="cursor__dot"></div><div class="cursor__ring"><span class="cursor__label"></span></div></div>
+
+    <header class="site-header" data-header>
+        <div class="header-inner">
+            <nav class="nav nav--left" aria-label="Primary">
+                <a href="about.html" class="nav-link" aria-current="page"><span><i data-text="About">About</i></span></a>
+<a href="services.html" class="nav-link"><span><i data-text="Services">Services</i></span></a>
+<a href="collection.html" class="nav-link"><span><i data-text="Collection">Collection</i></span></a>
+            </nav>
+            <a href="index.html" class="brand" aria-label="Hariike Styles — home">
+                <img src="images/logo.png" alt="Hariike Styles" width="1290" height="607">
+            </a>
+            <div class="nav nav--right">
+                <a href="contact.html" class="nav-link"><span><i data-text="Contact">Contact</i></span></a>
+                <a href="consultation.html" class="btn btn--gold btn--sm" data-magnetic><span>Book a consultation</span></a>
             </div>
-            
-            <div class="logo-container">
-                <img src="images/logo.png" alt="Hariike Styles Logo" class="logo">
-            </div>
-            
-            <div class="nav-links right-nav">
-                <a href="collection.html" class="nav-link">Collection</a>
-                <a href="consultation.html" class="nav-link">Book a Consultation</a>
-            </div>
-            
-            <!-- Mobile Menu Toggle -->
-            <button class="mobile-menu-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu">
+                <span class="menu-toggle__label">Menu</span>
+                <span class="menu-toggle__lines" aria-hidden="true"><i></i><i></i></span>
             </button>
         </div>
-        
-        <!-- Mobile Menu -->
-        <div class="mobile-menu">
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="about.html" class="nav-link active">About</a>
-            <a href="services.html" class="nav-link">Our Services</a>
-            <a href="collection.html" class="nav-link">Collection</a>
-            <a href="consultation.html" class="nav-link">Book a Consultation</a>
-        </div>
-    </nav>
+    </header>
 
-    <!-- Welcome Section -->
-    <section class="about-welcome-section">
-        <div class="about-welcome-content scroll-reveal">
-            <h2>Welcome to Hariike Styles</h2>
-            <p>
-                Hariike Styles began not just as a brand, but as a journey-one stitched with resilience and a deep rooted desire to create something meaningful.<br/>
-                We officially started in 2018, and what began as a humble pursuit has since grown into a thriving fashion brand committed to craftsmanship and intentionality.<br/>
-                Every piece is thoughtfully made to reflect the elegance and confidence of the modern woman.<br/>
-                Over the years, Hariike Styles has evolved from a single sewing machine and tailor into a full creative house with skilled designers, expert beaders, and administrative leads working together to bring every vision to life.<br/>
-                We are a brand built from the ground up, and every design we create carries a piece of our journey-a story of growth, grace, and how far we have come.
-            </p>
+    <div class="menu" id="menu" inert>
+        <div class="menu__bg"></div>
+        <nav class="menu__nav" aria-label="Mobile">
+            <a href="index.html" class="menu__link"><span class="menu__num">01</span><span class="menu__text">Home</span></a>
+<a href="about.html" class="menu__link" aria-current="page"><span class="menu__num">02</span><span class="menu__text">About</span></a>
+<a href="services.html" class="menu__link"><span class="menu__num">03</span><span class="menu__text">Services</span></a>
+<a href="collection.html" class="menu__link"><span class="menu__num">04</span><span class="menu__text">Collection</span></a>
+<a href="consultation.html" class="menu__link"><span class="menu__num">05</span><span class="menu__text">Consultation</span></a>
+<a href="contact.html" class="menu__link"><span class="menu__num">06</span><span class="menu__text">Contact</span></a>
+        </nav>
+        <div class="menu__foot">
+            <a href="mailto:Hariikestyles@gmail.com">Hariikestyles@gmail.com</a>
+            <a href="https://www.instagram.com/hariikestyles" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
         </div>
-    </section>
+    </div>
 
-    <!-- Creative Director Section -->
-    <section class="director-section scroll-reveal">
-        <div class="director-container">
-            <div class="director-image">
-                <img src="images/director.jpg" alt="Morayo Oshodi - Creative Director, Hariike Styles">
+    <main id="main">
+
+        <section class="page-hero">
+            <div class="page-hero__media" data-hero-media>
+                <img src="images/Banner3.jpg" alt="" fetchpriority="high">
             </div>
-            <div class="director-content scroll-reveal">
-                <h2>Creative Director Story</h2>
-                <p>
-                    Morayo Oshodi, Creative Director of Hariike Styles, is a designer whose journey began with her grandmother's sewing machine and a childhood fascination for craftsmanship. What started as quiet moments watching stitches come to life soon grew into a lifelong passion for fashion design.<br/>
-                    Although she pursued a BSc in Physiology and MSc in Environmental Toxicology and pollution management, her creative passion never waned. To broaden her perspective, Morayo studied Fashion Design and Marketing at IFA Paris — an experience that shaped her approach to design and her understanding of the global fashion industry.<br/>
-                    In 2018, Morayo founded Hariike Styles, bringing her vision of individuality and timeless elegance to life.<br/>
-                    Today, her designs embody a balance of structure, artistry, and storytelling; pieces that are not just worn, but experienced.<br/>
-                    For Morayo, fashion is a language, and Hariike Styles is her voice
-                </p>
+            <div class="container page-hero__inner">
+                <p class="crumb" data-reveal><a href="index.html">Home</a> &nbsp;/&nbsp; About</p>
+                <h1 class="h1" style="margin-top:20px;max-width:16ch" data-split>A journey stitched with <em>resilience.</em></h1>
+                <div class="page-hero__meta">
+                    <p data-reveal>Hariike Styles began not just as a brand, but as a journey — built from a deep-rooted desire to create something meaningful.</p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
+        <section class="section section--light">
+            <div class="container">
+                <div class="split">
+                    <div>
+                        <span class="eyebrow" data-reveal>Our story</span>
+                        <h2 class="h2" style="margin-top:22px" data-split>From a single sewing machine to a <em>creative house.</em></h2>
+                    </div>
+                    <div class="prose lead" data-reveal>
+                        <p>We officially started in 2018, and what began as a humble pursuit has since grown into a thriving fashion brand committed to craftsmanship and intentionality.</p>
+                        <p>Every piece is thoughtfully made to reflect the elegance and confidence of the modern woman.</p>
+                        <p>We are a brand built from the ground up, and every design we create carries a piece of our journey — a story of growth, grace, and how far we have come.</p>
+                    </div>
+                </div>
+                <div class="milestones">
+                    <div class="milestone" data-reveal>
+                        <div class="milestone__big" data-count="2018">2018</div>
+                        <div class="milestone__label">Founded</div>
+                        <p>Hariike Styles officially opens its doors.</p>
+                    </div>
+                    <div class="milestone" data-reveal>
+                        <div class="milestone__big">1 → <em>many</em></div>
+                        <div class="milestone__label">One machine, a full house</div>
+                        <p>Skilled designers, expert beaders and administrative leads, working as one.</p>
+                    </div>
+                    <div class="milestone" data-reveal>
+                        <div class="milestone__big" data-count="4">4</div>
+                        <div class="milestone__label">Disciplines</div>
+                        <p>Aso ebi, bespoke, bridal and editorial.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container split">
+                <div class="director__media sticky">
+                    <div class="frame frame--parallax" data-clip>
+                        <img src="images/director.jpg" alt="Morayo Oshodi, Creative Director of Hariike Styles" loading="lazy" data-speed="8">
+                    </div>
+                    <div class="director__caption"><span>Morayo Oshodi</span><b>Creative Director</b></div>
+                </div>
+                <div>
+                    <span class="eyebrow" data-reveal>Creative director</span>
+                    <h2 class="h2" style="margin-top:22px" data-split>It began with her grandmother’s <em>sewing machine.</em></h2>
+                    <div class="prose muted" style="margin-top:40px" data-reveal>
+                        <p>Morayo Oshodi is a designer whose journey began with a childhood fascination for craftsmanship. What started as quiet moments watching stitches come to life soon grew into a lifelong passion for fashion design.</p>
+                        <p>Although she pursued a BSc in Physiology and an MSc in Environmental Toxicology and Pollution Management, her creative passion never waned. To broaden her perspective, Morayo studied Fashion Design and Marketing at IFA Paris — an experience that shaped her approach to design and her understanding of the global fashion industry.</p>
+                        <p>In 2018, Morayo founded Hariike Styles, bringing her vision of individuality and timeless elegance to life. Today, her designs embody a balance of structure, artistry and storytelling: pieces that are not just worn, but experienced.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--ink2">
+            <div class="container">
+                <p class="pullquote" data-split>“For Morayo, fashion is a language, and Hariike Styles is <em>her voice.</em>”</p>
+            </div>
+        </section>
+
+    </main>
+
     <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-column">
-                <h3>Get in Touch</h3>
-                <p>Hariikestyles@gmail.com</p>
-                <p>Book a Consultation</p>
+        <div class="container">
+            <div class="footer__cta">
+                <div>
+                    <span class="eyebrow" data-reveal>Begin your piece</span>
+                    <h2 class="h1" style="margin-top:24px" data-split>Let’s create something <em>uniquely yours.</em></h2>
+                </div>
+                <a href="consultation.html" class="orb" data-magnetic data-cursor-hide><span>Book a<br>consultation</span></a>
             </div>
-            
-            <div class="footer-column">
-                <h3>Quick Links</h3>
-                <a href="about.html">About us</a>
-                <a href="services.html">Services</a>
-                <a href="collection.html">Our Collection</a>
-                <a href="consultation.html">Book a Consultation</a>
-            </div>
-            
-            <div class="footer-column">
-                <h3>Legal</h3>
-                <a href="privacy.html">Privacy</a>
-                <a href="terms.html">Terms and Conditions</a>
-                <a href="contact.html">Contact Us</a>
+            <div class="footer__grid">
+                <div class="footer__col">
+                    <p class="footer__intro">Bespoke, bridal &amp; aso-ebi couture — designing timeless elegance, one piece at a time.</p>
+                </div>
+                <div class="footer__col">
+                    <h3>Get in touch</h3>
+                    <a href="mailto:Hariikestyles@gmail.com">Hariikestyles@gmail.com</a>
+                    <a href="consultation.html">Book a consultation</a>
+                    <a href="https://www.instagram.com/hariikestyles" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+                </div>
+                <div class="footer__col">
+                    <h3>Explore</h3>
+                    <a href="about.html">About us</a>
+                    <a href="services.html">Services</a>
+                    <a href="collection.html">Our collection</a>
+                    <a href="contact.html">Contact us</a>
+                </div>
+                <div class="footer__col">
+                    <h3>Legal</h3>
+                    <a href="privacy.html">Privacy</a>
+                    <a href="terms.html">Terms &amp; conditions</a>
+                </div>
             </div>
         </div>
-        
-        <div class="footer-bottom">
-            <p>Copyright © 2025 Hariike Styles</p>
-            <p>Website designed by <a href="https://www.instagram.com/billionairechurchboy_?igsh=YnJkaGNmNDdtamp1&utm_source=qr" target="_blank" rel="noopener noreferrer">BCB Global Hub</a></p>
+        <span class="footer__mark" aria-hidden="true" data-mark>Hariike</span>
+        <div class="container">
+            <div class="footer__bottom">
+                <p>© <span data-year>2025</span> Hariike Styles. All rights reserved.</p>
+                <p>Website designed by <a href="https://www.instagram.com/billionairechurchboy_?igsh=YnJkaGNmNDdtamp1&amp;utm_source=qr" target="_blank" rel="noopener noreferrer">BCB Global Hub</a></p>
+                <a href="#main" class="to-top" data-to-top>Back to top <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M6 11V1M1 6l5-5 5 5" stroke="currentColor" stroke-width="1.2"/></svg></a>
+            </div>
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
-

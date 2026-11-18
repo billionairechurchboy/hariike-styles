@@ -3,200 +3,372 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hariike Styles - Crafted for the Woman Who Defines Her Style</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="images/logo.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/logo.png">
-    <link rel="shortcut icon" href="images/logo.png">
+    <title>Hariike Styles — Crafted for the woman who defines her style</title>
+    <meta name="description" content="Hariike Styles creates timeless bespoke, bridal and aso-ebi couture with refined craftsmanship and thoughtful detail.">
+    <meta name="theme-color" content="#0e0b09">
+    <meta property="og:title" content="Hariike Styles — Crafted for the woman who defines her style">
+    <meta property="og:description" content="Hariike Styles creates timeless bespoke, bridal and aso-ebi couture with refined craftsmanship and thoughtful detail.">
+    <meta property="og:image" content="images/Banner1.jpg">
+    <link rel="icon" type="image/png" href="images/logo.png">
     <link rel="apple-touch-icon" href="images/logo.png">
-    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        (function (d) {
+            var s = function (k) { try { return sessionStorage.getItem(k); } catch (e) { return null; } };
+            d.classList.add('js');
+            if (s('hs-seen')) d.classList.add('seen');
+            if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                d.classList.add('motion');
+                if (s('hs-transition')) d.classList.add('arriving');
+                setTimeout(function () { if (!window.__hsReady) { d.classList.remove('motion', 'arriving'); d.classList.add('no-motion'); } }, 4000);
+            }
+        })(document.documentElement);
+    </script>
 </head>
-<body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-links left-nav">
-                <a href="index.html" class="nav-link active">Home</a>
-                <a href="about.html" class="nav-link">About</a>
-                <a href="services.html" class="nav-link">Our Services</a>
+<body class="page-home">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="preloader" aria-hidden="true">
+        <div class="preloader__inner">
+            <img class="preloader__logo" src="images/logo.png" alt="" width="1290" height="607">
+            <div class="preloader__bar"><i></i></div>
+        </div>
+        <span class="preloader__count">0</span>
+    </div>
+    <div class="curtain" aria-hidden="true"><img src="images/logo.png" alt="" width="1290" height="607"></div>
+    <div class="cursor" aria-hidden="true"><div class="cursor__dot"></div><div class="cursor__ring"><span class="cursor__label"></span></div></div>
+
+    <header class="site-header" data-header>
+        <div class="header-inner">
+            <nav class="nav nav--left" aria-label="Primary">
+                <a href="about.html" class="nav-link"><span><i data-text="About">About</i></span></a>
+<a href="services.html" class="nav-link"><span><i data-text="Services">Services</i></span></a>
+<a href="collection.html" class="nav-link"><span><i data-text="Collection">Collection</i></span></a>
+            </nav>
+            <a href="index.html" class="brand" aria-label="Hariike Styles — home">
+                <img src="images/logo.png" alt="Hariike Styles" width="1290" height="607">
+            </a>
+            <div class="nav nav--right">
+                <a href="contact.html" class="nav-link"><span><i data-text="Contact">Contact</i></span></a>
+                <a href="consultation.html" class="btn btn--gold btn--sm" data-magnetic><span>Book a consultation</span></a>
             </div>
-            
-            <div class="logo-container">
-                <img src="images/logo.png" alt="Hariike Styles Logo" class="logo">
-            </div>
-            
-            <div class="nav-links right-nav">
-                <a href="collection.html" class="nav-link">Collection</a>
-                <a href="consultation.html" class="nav-link">Book a Consultation</a>
-            </div>
-            
-            <!-- Mobile Menu Toggle -->
-            <button class="mobile-menu-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu">
+                <span class="menu-toggle__label">Menu</span>
+                <span class="menu-toggle__lines" aria-hidden="true"><i></i><i></i></span>
             </button>
         </div>
-        
-        <!-- Mobile Menu -->
-        <div class="mobile-menu">
-            <a href="index.html" class="nav-link active">Home</a>
-            <a href="about.html" class="nav-link">About</a>
-            <a href="services.html" class="nav-link">Our Services</a>
-            <a href="collection.html" class="nav-link">Collection</a>
-            <a href="consultation.html" class="nav-link">Book a Consultation</a>
-        </div>
-    </nav>
+    </header>
 
-    <!-- Hero Section with Carousel -->
-    <section class="hero-section">
-        <div class="hero-carousel">
-            <div class="carousel-slide active">
-                <img src="images/Banner1.jpg" alt="Hariike Styles Fashion Collection 1">
-                <div class="hero-overlay"></div>
-            </div>
-            <div class="carousel-slide">
-                <img src="images/Banner2.jpg" alt="Hariike Styles Fashion Collection 2">
-                <div class="hero-overlay"></div>
-            </div>
-            <div class="carousel-slide">
-                <img src="images/Banner3.jpg" alt="Hariike Styles Fashion Collection 3">
-                <div class="hero-overlay"></div>
-            </div>
+    <div class="menu" id="menu" inert>
+        <div class="menu__bg"></div>
+        <nav class="menu__nav" aria-label="Mobile">
+            <a href="index.html" class="menu__link" aria-current="page"><span class="menu__num">01</span><span class="menu__text">Home</span></a>
+<a href="about.html" class="menu__link"><span class="menu__num">02</span><span class="menu__text">About</span></a>
+<a href="services.html" class="menu__link"><span class="menu__num">03</span><span class="menu__text">Services</span></a>
+<a href="collection.html" class="menu__link"><span class="menu__num">04</span><span class="menu__text">Collection</span></a>
+<a href="consultation.html" class="menu__link"><span class="menu__num">05</span><span class="menu__text">Consultation</span></a>
+<a href="contact.html" class="menu__link"><span class="menu__num">06</span><span class="menu__text">Contact</span></a>
+        </nav>
+        <div class="menu__foot">
+            <a href="mailto:Hariikestyles@gmail.com">Hariikestyles@gmail.com</a>
+            <a href="https://www.instagram.com/hariikestyles" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
         </div>
-        
-        <div class="hero-content">
-            <p class="hero-tagline fade-in">EXQUISITELY MADE</p>
-            <h1 class="hero-title fade-in">
-                <span class="hero-text active">Crafted for the woman who defines her style</span>
-                <span class="hero-text">Modern Craftsmanship,<br/>Timeless Elegance</span>
-                <span class="hero-text">Designing Timeless Elegance,<br/>One Piece At A Time</span>
-            </h1>
-            <p class="hero-subtitle fade-in">specially made by Hariike Styles</p>
-            <a href="consultation.html" class="cta-button-hero fade-in-delay">BOOK A CONSULTATION</a>
-        </div>
-        
-        <div class="carousel-indicators">
-            <button class="indicator active" data-slide="0" aria-label="Slide 1"></button>
-            <button class="indicator" data-slide="1" aria-label="Slide 2"></button>
-            <button class="indicator" data-slide="2" aria-label="Slide 3"></button>
-        </div>
-    </section>
+    </div>
 
-    <!-- Welcome Section -->
-    <section class="welcome-section">
-        <div class="container">
-            <h2 class="section-title">Welcome to Hariike Styles</h2>
-            <p class="section-subtitle">Every piece is an expression of individuality - refined craftsmanship, thoughtful detail, and timeless allure.</p>
-            
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="images/gallery1.jpg" alt="Elegant Black Gown - Hariike Styles">
+    <main id="main">
+
+        <section class="hero" data-hero>
+            <div class="hero__slides">
+                <div class="hero__slide is-active" data-slide>
+                    <img src="images/Banner1.jpg" alt="Hariike Styles couture, look 1" fetchpriority="high">
                 </div>
-                <div class="gallery-item">
-                    <img src="images/gallery2.jpg" alt="Red Beaded Evening Gown - Hariike Styles">
+
+                <div class="hero__slide" data-slide>
+                    <img src="images/Banner2.jpg" alt="Hariike Styles couture, look 2" loading="lazy">
                 </div>
-                <div class="gallery-item">
-                    <img src="images/gallery3.jpg" alt="Silver Sequin Dress - Hariike Styles">
-                </div>
-                <div class="gallery-item">
-                    <img src="images/gallery4.jpg" alt="Blue Beaded Gown with Tulle - Hariike Styles">
-                </div>
-                <div class="gallery-item">
-                    <img src="images/gallery5.jpg" alt="Purple Beaded Dress - Hariike Styles">
-                </div>
-                <div class="gallery-item">
-                    <img src="images/gallery6.jpg" alt="Orange Feathered Sleeve Gown - Hariike Styles">
+
+                <div class="hero__slide" data-slide>
+                    <img src="images/Banner3.jpg" alt="Hariike Styles couture, look 3" loading="lazy">
                 </div>
             </div>
-            
-            <a href="https://www.instagram.com/hariikestyles" target="_blank" class="instagram-button">Visit Our Instagram</a>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="testimonials-section">
-        <div class="container">
-            <h2 class="section-title white">What our Clients say</h2>
-            
-            <div class="testimonial-carousel">
-                <div class="testimonial-slide active">
-                    <div class="testimonial-content">
-                        <span class="quote-mark">"</span>
-                        <p class="testimonial-text">Every detail was perfect. My dress fit like it was made just for me</p>
-                        <p class="testimonial-author">Desola</p>
-                        <span class="quote-mark closing">"</span>
-                    </div>
+            <div class="hero__shade"></div>
+            <div class="container hero__content">
+                <div class="hero__top">
+                    <span class="eyebrow" data-hero-fade>Exquisitely made · Est. 2018</span>
                 </div>
-                <div class="testimonial-slide">
-                    <div class="testimonial-content">
-                        <span class="quote-mark">"</span>
-                        <p class="testimonial-text">The quality and attention to detail exceeded all my expectations. I felt like a queen!</p>
-                        <p class="testimonial-author">Amara</p>
-                        <span class="quote-mark closing">"</span>
+                <h1 class="display hero__title">
+                    <span class="hero__line is-active" data-hero-line>Crafted for the woman who <em>defines</em> her style</span>
+<span class="hero__line" data-hero-line>Modern craftsmanship, <em>timeless</em> elegance</span>
+<span class="hero__line" data-hero-line>Timeless elegance, <em>one piece</em> at a time</span>
+                </h1>
+                <div class="hero__bottom">
+                    <div data-hero-fade>
+                        <p class="hero__intro">Bespoke, bridal and aso-ebi designs — specially made by Hariike Styles, with refined craftsmanship and thoughtful detail.</p>
+                        <div class="hero__actions">
+                            <a href="consultation.html" class="btn btn--gold" data-magnetic><span>Book a consultation</span><svg class="btn__arrow" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="1.2"/></svg></a>
+                            <a href="collection.html" class="link-line">Explore the lookbook</a>
+                        </div>
                     </div>
-                </div>
-                <div class="testimonial-slide">
-                    <div class="testimonial-content">
-                        <span class="quote-mark">"</span>
-                        <p class="testimonial-text">Hariike Styles transformed my vision into reality. Absolutely stunning work!</p>
-                        <p class="testimonial-author">Chioma</p>
-                        <span class="quote-mark closing">"</span>
-                    </div>
-                </div>
-                <div class="testimonial-slide">
-                    <div class="testimonial-content">
-                        <span class="quote-mark">"</span>
-                        <p class="testimonial-text">Professional, creative, and incredibly talented. I recommend them to everyone!</p>
-                        <p class="testimonial-author">Blessing</p>
-                        <span class="quote-mark closing">"</span>
+                    <div class="hero__meta-right" data-hero-fade>
+                        <div class="hero__progress">
+                            <span class="hero__count"><b data-hero-count>01</b> / 03</span>
+                            <button class="hero__bar" type="button" aria-label="Show slide 1"><i></i></button><button class="hero__bar" type="button" aria-label="Show slide 2"><i></i></button><button class="hero__bar" type="button" aria-label="Show slide 3"><i></i></button>
+                        </div>
+                        <span class="scroll-cue" style="margin-top:22px"><span class="scroll-cue__line"></span>Scroll</span>
                     </div>
                 </div>
             </div>
-            
-            <div class="testimonial-indicators">
-                <button class="testimonial-indicator active" data-testimonial="0"></button>
-                <button class="testimonial-indicator" data-testimonial="1"></button>
-                <button class="testimonial-indicator" data-testimonial="2"></button>
-                <button class="testimonial-indicator" data-testimonial="3"></button>
+        </section>
+
+        <div class="marquee" aria-hidden="true">
+            <div class="marquee__track" data-marquee>
+                <div class="marquee__group"><span class="marquee__item">Bespoke<svg class="marquee__star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0c.6 6.4 5.6 11.4 12 12-6.4.6-11.4 5.6-12 12-.6-6.4-5.6-11.4-12-12C6.4 11.4 11.4 6.4 12 0z" fill="currentColor"/></svg></span><span class="marquee__item">Bridal<svg class="marquee__star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0c.6 6.4 5.6 11.4 12 12-6.4.6-11.4 5.6-12 12-.6-6.4-5.6-11.4-12-12C6.4 11.4 11.4 6.4 12 0z" fill="currentColor"/></svg></span><span class="marquee__item">Aso Ebi<svg class="marquee__star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0c.6 6.4 5.6 11.4 12 12-6.4.6-11.4 5.6-12 12-.6-6.4-5.6-11.4-12-12C6.4 11.4 11.4 6.4 12 0z" fill="currentColor"/></svg></span><span class="marquee__item">Editorial<svg class="marquee__star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0c.6 6.4 5.6 11.4 12 12-6.4.6-11.4 5.6-12 12-.6-6.4-5.6-11.4-12-12C6.4 11.4 11.4 6.4 12 0z" fill="currentColor"/></svg></span><span class="marquee__item">Couture<svg class="marquee__star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0c.6 6.4 5.6 11.4 12 12-6.4.6-11.4 5.6-12 12-.6-6.4-5.6-11.4-12-12C6.4 11.4 11.4 6.4 12 0z" fill="currentColor"/></svg></span><span class="marquee__item">Since 2018<svg class="marquee__star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0c.6 6.4 5.6 11.4 12 12-6.4.6-11.4 5.6-12 12-.6-6.4-5.6-11.4-12-12C6.4 11.4 11.4 6.4 12 0z" fill="currentColor"/></svg></span></div>
+                <div class="marquee__group"><span class="marquee__item">Bespoke<svg class="marquee__star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0c.6 6.4 5.6 11.4 12 12-6.4.6-11.4 5.6-12 12-.6-6.4-5.6-11.4-12-12C6.4 11.4 11.4 6.4 12 0z" fill="currentColor"/></svg></span><span class="marquee__item">Bridal<svg class="marquee__star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0c.6 6.4 5.6 11.4 12 12-6.4.6-11.4 5.6-12 12-.6-6.4-5.6-11.4-12-12C6.4 11.4 11.4 6.4 12 0z" fill="currentColor"/></svg></span><span class="marquee__item">Aso Ebi<svg class="marquee__star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0c.6 6.4 5.6 11.4 12 12-6.4.6-11.4 5.6-12 12-.6-6.4-5.6-11.4-12-12C6.4 11.4 11.4 6.4 12 0z" fill="currentColor"/></svg></span><span class="marquee__item">Editorial<svg class="marquee__star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0c.6 6.4 5.6 11.4 12 12-6.4.6-11.4 5.6-12 12-.6-6.4-5.6-11.4-12-12C6.4 11.4 11.4 6.4 12 0z" fill="currentColor"/></svg></span><span class="marquee__item">Couture<svg class="marquee__star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0c.6 6.4 5.6 11.4 12 12-6.4.6-11.4 5.6-12 12-.6-6.4-5.6-11.4-12-12C6.4 11.4 11.4 6.4 12 0z" fill="currentColor"/></svg></span><span class="marquee__item">Since 2018<svg class="marquee__star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0c.6 6.4 5.6 11.4 12 12-6.4.6-11.4 5.6-12 12-.6-6.4-5.6-11.4-12-12C6.4 11.4 11.4 6.4 12 0z" fill="currentColor"/></svg></span></div>
             </div>
         </div>
-    </section>
 
-    <!-- Footer -->
+        <section class="section section--light">
+            <div class="container statement">
+                <div class="statement__label"><span class="eyebrow" data-reveal>Welcome to Hariike Styles</span></div>
+                <div>
+                    <p class="statement__text" data-scrub>Every piece is an expression of <em>individuality</em> — refined craftsmanship, thoughtful detail, and <em>timeless allure.</em></p>
+                    <div class="statement__foot" data-reveal>
+                        <p>What began in 2018 with a single sewing machine has grown into a full creative house of designers, expert beaders and makers — bringing every vision to life.</p>
+                        <a href="about.html" class="link-line">Our story</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="gallery-head">
+                    <h2 class="h2" data-split>Worn, not just made — <em>experienced.</em></h2>
+                    <p class="muted" data-reveal>A glimpse of recent pieces from the atelier. Follow along for fittings, details and new work.</p>
+                </div>
+                <div class="editorial">
+                    <figure class="editorial__item" data-reveal-item>
+                        <div class="frame frame--parallax" data-clip data-cursor="View">
+                            <img src="images/gallery1.jpg" alt="Black cut-out gown — Hariike Styles" loading="lazy" decoding="async" data-speed="-6">
+                        </div>
+                        <figcaption><span>Black cut-out gown</span><b>01</b></figcaption>
+                    </figure>
+
+                    <figure class="editorial__item" data-reveal-item>
+                        <div class="frame frame--parallax" data-clip data-cursor="View">
+                            <img src="images/gallery2.jpg" alt="Purple beaded gown — Hariike Styles" loading="lazy" decoding="async" data-speed="10">
+                        </div>
+                        <figcaption><span>Purple beaded gown</span><b>02</b></figcaption>
+                    </figure>
+
+                    <figure class="editorial__item" data-reveal-item>
+                        <div class="frame frame--parallax" data-clip data-cursor="View">
+                            <img src="images/gallery3.jpg" alt="Red mermaid gown — Hariike Styles" loading="lazy" decoding="async" data-speed="-4">
+                        </div>
+                        <figcaption><span>Red mermaid gown</span><b>03</b></figcaption>
+                    </figure>
+
+                    <figure class="editorial__item" data-reveal-item>
+                        <div class="frame frame--parallax" data-clip data-cursor="View">
+                            <img src="images/gallery4.jpg" alt="Silver sequin gown — Hariike Styles" loading="lazy" decoding="async" data-speed="8">
+                        </div>
+                        <figcaption><span>Silver sequin gown</span><b>04</b></figcaption>
+                    </figure>
+
+                    <figure class="editorial__item" data-reveal-item>
+                        <div class="frame frame--parallax" data-clip data-cursor="View">
+                            <img src="images/gallery5.jpg" alt="Blue beaded gown with tulle — Hariike Styles" loading="lazy" decoding="async" data-speed="-8">
+                        </div>
+                        <figcaption><span>Blue beaded gown with tulle</span><b>05</b></figcaption>
+                    </figure>
+
+                    <figure class="editorial__item" data-reveal-item>
+                        <div class="frame frame--parallax" data-clip data-cursor="View">
+                            <img src="images/gallery6.jpg" alt="Orange feathered sleeve gown — Hariike Styles" loading="lazy" decoding="async" data-speed="12">
+                        </div>
+                        <figcaption><span>Orange feathered sleeve gown</span><b>06</b></figcaption>
+                    </figure>
+                </div>
+                <div class="gallery-cta">
+                    <a href="https://www.instagram.com/hariikestyles" target="_blank" rel="noopener noreferrer" class="btn btn--ghost" data-magnetic><span>Visit our Instagram</span><svg class="btn__arrow" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="1.2"/></svg></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--ink2">
+            <div class="container">
+                <div class="gallery-head">
+                    <div>
+                        <span class="eyebrow" data-reveal>What we offer</span>
+                        <h2 class="h2" style="margin-top:22px" data-split>Every creation begins with <em>intention.</em></h2>
+                    </div>
+                    <a href="services.html" class="link-line" data-reveal>All services</a>
+                </div>
+                <div class="svc-list" data-svc-list>
+                    <a href="services.html" class="svc-row" data-img="0" data-reveal>
+                        <span class="svc-row__num">01</span>
+                        <span class="svc-row__name">Aso Ebi</span>
+                        <span class="svc-row__desc">Coordinated and stylish pieces for every occasion.</span>
+                        <span class="svc-row__arrow"><svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="1.2"/></svg></span>
+                    </a>
+
+                    <a href="services.html" class="svc-row" data-img="1" data-reveal>
+                        <span class="svc-row__num">02</span>
+                        <span class="svc-row__name">Bespoke</span>
+                        <span class="svc-row__desc">Custom made designs tailored to perfection.</span>
+                        <span class="svc-row__arrow"><svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="1.2"/></svg></span>
+                    </a>
+
+                    <a href="services.html" class="svc-row" data-img="2" data-reveal>
+                        <span class="svc-row__num">03</span>
+                        <span class="svc-row__name">Bridals</span>
+                        <span class="svc-row__desc">Exquisite dresses crafted for unforgettable moments.</span>
+                        <span class="svc-row__arrow"><svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="1.2"/></svg></span>
+                    </a>
+
+                    <a href="services.html" class="svc-row" data-img="3" data-reveal>
+                        <span class="svc-row__num">04</span>
+                        <span class="svc-row__name">Editorials</span>
+                        <span class="svc-row__desc">Curated pieces that tell stories and create striking visuals for shoots and campaigns.</span>
+                        <span class="svc-row__arrow"><svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="1.2"/></svg></span>
+                    </a>
+                </div>
+            </div>
+            <div class="follower" aria-hidden="true" data-follower><img src="images/emerald-bloom-1.jpg" alt="" loading="lazy"><img src="images/nova-001-1.jpg" alt="" loading="lazy"><img src="images/tiara-1.jpg" alt="" loading="lazy"><img src="images/ethereal-1.jpg" alt="" loading="lazy"></div>
+        </section>
+
+        <section class="section showcase" data-showcase>
+            <div class="container showcase__head">
+                <div>
+                    <span class="eyebrow" data-reveal>The lookbook</span>
+                    <h2 class="h2" style="margin-top:22px" data-split>Pieces from the <em>collection</em></h2>
+                </div>
+                <a href="collection.html" class="link-line" data-reveal>View all 12 pieces</a>
+            </div>
+            <div class="showcase__track" data-showcase-track>
+                    <a href="collection.html#summer-rain" class="piece" data-cursor="View">
+                        <div class="frame"><img src="images/summer-rain-1.jpg" alt="Summer Rain — Floral embellished dress" loading="lazy" decoding="async"></div>
+                        <div class="piece__meta"><span class="piece__name">Summer Rain</span><span class="piece__idx">01</span></div>
+                        <p class="piece__tag">Floral embellished dress</p>
+                    </a>
+
+                    <a href="collection.html#nova-001" class="piece" data-cursor="View">
+                        <div class="frame"><img src="images/nova-001-1.jpg" alt="Nova 001 — Black shimmer dress with gloves" loading="lazy" decoding="async"></div>
+                        <div class="piece__meta"><span class="piece__name">Nova 001</span><span class="piece__idx">02</span></div>
+                        <p class="piece__tag">Black shimmer dress with gloves</p>
+                    </a>
+
+                    <a href="collection.html#velora" class="piece" data-cursor="View">
+                        <div class="frame"><img src="images/velora-1.jpg" alt="Velora — Luxurious velvet" loading="lazy" decoding="async"></div>
+                        <div class="piece__meta"><span class="piece__name">Velora</span><span class="piece__idx">03</span></div>
+                        <p class="piece__tag">Luxurious velvet</p>
+                    </a>
+
+                    <a href="collection.html#coral-cascade" class="piece" data-cursor="View">
+                        <div class="frame"><img src="images/coral-cascade-1.jpg" alt="Coral Cascade — A wave of soft, flowing grace" loading="lazy" decoding="async"></div>
+                        <div class="piece__meta"><span class="piece__name">Coral Cascade</span><span class="piece__idx">04</span></div>
+                        <p class="piece__tag">A wave of soft, flowing grace</p>
+                    </a>
+
+                    <a href="collection.html#emerald-bloom" class="piece" data-cursor="View">
+                        <div class="frame"><img src="images/emerald-bloom-1.jpg" alt="Emerald Bloom — Regal elegance" loading="lazy" decoding="async"></div>
+                        <div class="piece__meta"><span class="piece__name">Emerald Bloom</span><span class="piece__idx">05</span></div>
+                        <p class="piece__tag">Regal elegance</p>
+                    </a>
+
+                    <a href="collection.html#ethereal" class="piece" data-cursor="View">
+                        <div class="frame"><img src="images/ethereal-1.jpg" alt="Ethereal — Born of sky and water" loading="lazy" decoding="async"></div>
+                        <div class="piece__meta"><span class="piece__name">Ethereal</span><span class="piece__idx">06</span></div>
+                        <p class="piece__tag">Born of sky and water</p>
+                    </a>
+                <div class="piece piece--end">
+                    <div style="text-align:center;padding:24px">
+                        <p class="h3">See the full<br><em>lookbook</em></p>
+                        <a href="collection.html" class="btn btn--gold btn--sm" data-magnetic><span>Explore</span><svg class="btn__arrow" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="1.2"/></svg></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--ink2">
+            <div class="container quotes" data-quotes>
+                <span class="eyebrow" data-reveal>What our clients say</span>
+                <span class="quotes__mark" aria-hidden="true" style="margin-top:40px">“</span>
+                <div class="quotes__stage" aria-live="polite">
+                    <blockquote class="quote is-active" data-quote>
+                        <p class="quote__text">Every detail was perfect. My dress fit like it was made just for me.</p>
+                        <footer class="quote__author">— Desola</footer>
+                    </blockquote>
+
+                    <blockquote class="quote" data-quote>
+                        <p class="quote__text">The quality and attention to detail exceeded all my expectations. I felt like a queen!</p>
+                        <footer class="quote__author">— Amara</footer>
+                    </blockquote>
+
+                    <blockquote class="quote" data-quote>
+                        <p class="quote__text">Hariike Styles transformed my vision into reality. Absolutely stunning work!</p>
+                        <footer class="quote__author">— Chioma</footer>
+                    </blockquote>
+
+                    <blockquote class="quote" data-quote>
+                        <p class="quote__text">Professional, creative, and incredibly talented. I recommend them to everyone!</p>
+                        <footer class="quote__author">— Blessing</footer>
+                    </blockquote>
+                </div>
+                <div class="quotes__nav"><button class="quotes__dot is-active" type="button" aria-label="Show testimonial 1"><i></i></button><button class="quotes__dot" type="button" aria-label="Show testimonial 2"><i></i></button><button class="quotes__dot" type="button" aria-label="Show testimonial 3"><i></i></button><button class="quotes__dot" type="button" aria-label="Show testimonial 4"><i></i></button></div>
+            </div>
+        </section>
+
+    </main>
+
     <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-column">
-                <h3>Get in Touch</h3>
-                <p>Hariikestyles@gmail.com</p>
-                <p>Book a Consultation</p>
+        <div class="container">
+            <div class="footer__cta">
+                <div>
+                    <span class="eyebrow" data-reveal>Begin your piece</span>
+                    <h2 class="h1" style="margin-top:24px" data-split>Let’s create something <em>uniquely yours.</em></h2>
+                </div>
+                <a href="consultation.html" class="orb" data-magnetic data-cursor-hide><span>Book a<br>consultation</span></a>
             </div>
-            
-            <div class="footer-column">
-                <h3>Quick Links</h3>
-                <a href="about.html">About us</a>
-                <a href="services.html">Services</a>
-                <a href="collection.html">Our Collection</a>
-                <a href="consultation.html">Book a Consultation</a>
-            </div>
-            
-            <div class="footer-column">
-                <h3>Legal</h3>
-                <a href="privacy.html">Privacy</a>
-                <a href="terms.html">Terms and Conditions</a>
-                <a href="contact.html">Contact Us</a>
+            <div class="footer__grid">
+                <div class="footer__col">
+                    <p class="footer__intro">Bespoke, bridal &amp; aso-ebi couture — designing timeless elegance, one piece at a time.</p>
+                </div>
+                <div class="footer__col">
+                    <h3>Get in touch</h3>
+                    <a href="mailto:Hariikestyles@gmail.com">Hariikestyles@gmail.com</a>
+                    <a href="consultation.html">Book a consultation</a>
+                    <a href="https://www.instagram.com/hariikestyles" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+                </div>
+                <div class="footer__col">
+                    <h3>Explore</h3>
+                    <a href="about.html">About us</a>
+                    <a href="services.html">Services</a>
+                    <a href="collection.html">Our collection</a>
+                    <a href="contact.html">Contact us</a>
+                </div>
+                <div class="footer__col">
+                    <h3>Legal</h3>
+                    <a href="privacy.html">Privacy</a>
+                    <a href="terms.html">Terms &amp; conditions</a>
+                </div>
             </div>
         </div>
-        
-        <div class="footer-bottom">
-            <p>Copyright © 2025 Hariike Styles</p>
-            <p>Website designed by <a href="https://www.instagram.com/billionairechurchboy_?igsh=YnJkaGNmNDdtamp1&utm_source=qr" target="_blank" rel="noopener noreferrer">BCB Global Hub</a></p>
+        <span class="footer__mark" aria-hidden="true" data-mark>Hariike</span>
+        <div class="container">
+            <div class="footer__bottom">
+                <p>© <span data-year>2025</span> Hariike Styles. All rights reserved.</p>
+                <p>Website designed by <a href="https://www.instagram.com/billionairechurchboy_?igsh=YnJkaGNmNDdtamp1&amp;utm_source=qr" target="_blank" rel="noopener noreferrer">BCB Global Hub</a></p>
+                <a href="#main" class="to-top" data-to-top>Back to top <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M6 11V1M1 6l5-5 5 5" stroke="currentColor" stroke-width="1.2"/></svg></a>
+            </div>
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
-

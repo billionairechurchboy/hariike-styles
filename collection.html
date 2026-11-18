@@ -3,405 +3,358 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Collection - Hariike Styles</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="images/logo.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/logo.png">
-    <link rel="shortcut icon" href="images/logo.png">
+    <title>Collection — Hariike Styles</title>
+    <meta name="description" content="Explore the Hariike Styles 2024 lookbook.">
+    <meta name="theme-color" content="#0e0b09">
+    <meta property="og:title" content="Collection — Hariike Styles">
+    <meta property="og:description" content="Explore the Hariike Styles 2024 lookbook.">
+    <meta property="og:image" content="images/Banner1.jpg">
+    <link rel="icon" type="image/png" href="images/logo.png">
     <link rel="apple-touch-icon" href="images/logo.png">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="pages.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        (function (d) {
+            var s = function (k) { try { return sessionStorage.getItem(k); } catch (e) { return null; } };
+            d.classList.add('js');
+            if (s('hs-seen')) d.classList.add('seen');
+            if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                d.classList.add('motion');
+                if (s('hs-transition')) d.classList.add('arriving');
+                setTimeout(function () { if (!window.__hsReady) { d.classList.remove('motion', 'arriving'); d.classList.add('no-motion'); } }, 4000);
+            }
+        })(document.documentElement);
+    </script>
 </head>
-<body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-links left-nav">
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="about.html" class="nav-link">About</a>
-                <a href="services.html" class="nav-link">Our Services</a>
+<body class="page-collection">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="curtain" aria-hidden="true"><img src="images/logo.png" alt="" width="1290" height="607"></div>
+    <div class="cursor" aria-hidden="true"><div class="cursor__dot"></div><div class="cursor__ring"><span class="cursor__label"></span></div></div>
+
+    <header class="site-header" data-header>
+        <div class="header-inner">
+            <nav class="nav nav--left" aria-label="Primary">
+                <a href="about.html" class="nav-link"><span><i data-text="About">About</i></span></a>
+<a href="services.html" class="nav-link"><span><i data-text="Services">Services</i></span></a>
+<a href="collection.html" class="nav-link" aria-current="page"><span><i data-text="Collection">Collection</i></span></a>
+            </nav>
+            <a href="index.html" class="brand" aria-label="Hariike Styles — home">
+                <img src="images/logo.png" alt="Hariike Styles" width="1290" height="607">
+            </a>
+            <div class="nav nav--right">
+                <a href="contact.html" class="nav-link"><span><i data-text="Contact">Contact</i></span></a>
+                <a href="consultation.html" class="btn btn--gold btn--sm" data-magnetic><span>Book a consultation</span></a>
             </div>
-            
-            <div class="logo-container">
-                <img src="images/logo.png" alt="Hariike Styles Logo" class="logo">
-            </div>
-            
-            <div class="nav-links right-nav">
-                <a href="collection.html" class="nav-link active">Collection</a>
-                <a href="consultation.html" class="nav-link">Book a Consultation</a>
-            </div>
-            
-            <!-- Mobile Menu Toggle -->
-            <button class="mobile-menu-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu">
+                <span class="menu-toggle__label">Menu</span>
+                <span class="menu-toggle__lines" aria-hidden="true"><i></i><i></i></span>
             </button>
         </div>
-        
-        <!-- Mobile Menu -->
-        <div class="mobile-menu">
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="about.html" class="nav-link">About</a>
-            <a href="services.html" class="nav-link">Our Services</a>
-            <a href="collection.html" class="nav-link active">Collection</a>
-            <a href="consultation.html" class="nav-link">Book a Consultation</a>
-        </div>
-    </nav>
+    </header>
 
-    <!-- Page Header -->
-    <section class="page-header">
-        <div class="page-header-overlay"></div>
-        <img src="images/collection-banner.jpg" alt="Our Collection">
-        <div class="page-header-content">
-            <h1 class="page-title">Explore Our Lookbook</h1>
-            <p class="page-subtitle">© 2024 Collection</p>
-        </div>
-    </section>
-
-    <!-- Collection Filter -->
-    <section class="filter-section">
-        <div class="container">
-            <div class="filter-buttons scroll-reveal">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="summer-rain">Summer Rain Dress</button>
-                <button class="filter-btn" data-filter="nova-001">Nova 001</button>
-                <button class="filter-btn" data-filter="nova-002">Nova 002</button>
-                <button class="filter-btn" data-filter="tiara">Tiara Dress</button>
-                <button class="filter-btn" data-filter="ripple">The Ripple Dress</button>
-                <button class="filter-btn" data-filter="bloom">Bloom Dress</button>
-                <button class="filter-btn" data-filter="velora">Velora Dress</button>
-                <button class="filter-btn" data-filter="coral-cascade">Coral Cascade</button>
-                <button class="filter-btn" data-filter="noir">Noir</button>
-                <button class="filter-btn" data-filter="olive-opulence">Olive Opulence</button>
-                <button class="filter-btn" data-filter="emerald-bloom">Emerald Bloom</button>
-                <button class="filter-btn" data-filter="ethereal">Ethereal</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Collection Grid -->
-    <section class="collection-section">
-        <div class="container">
-            <div class="collection-grid scroll-reveal">
-                <!-- Collection Items -->
-                <div class="collection-item scroll-reveal" data-category="summer-rain">
-                    <div class="collection-image-gallery">
-                        <div class="gallery-main-image">
-                            <img src="images/summer-rain-1.jpg" alt="Summer Rain Dress">
-                            <img src="images/summer-rain-2.jpg" alt="Summer Rain Dress">
-                        </div>
-                        <div class="gallery-nav">
-                            <button class="gallery-prev">‹</button>
-                            <button class="gallery-next">›</button>
-                        </div>
-                        <div class="collection-overlay">
-                            <button class="view-btn">View Details</button>
-                        </div>
-                    </div>
-                    <div class="collection-info">
-                        <h3>SUMMER RAIN DRESS</h3>
-                        <p>( Floral embellished dress)<br>
-                        <strong>Bold color meets feminine drama</strong><br>
-                        A stunning sunshine yellow gown featuring an organza balloon-sleeve shawl and a striking vertical cascade of floral appliques</p>
-                    </div>
-                </div>
-
-                <div class="collection-item scroll-reveal" data-category="nova-001">
-                    <div class="collection-image-gallery">
-                        <div class="gallery-main-image">
-                            <img src="images/nova-001-1.jpg" alt="Nova 001">
-                            <img src="images/nova-001-2.jpg" alt="Nova 001">
-                        </div>
-                        <div class="gallery-nav">
-                            <button class="gallery-prev">‹</button>
-                            <button class="gallery-next">›</button>
-                        </div>
-                        <div class="collection-overlay">
-                            <button class="view-btn">View Details</button>
-                        </div>
-                    </div>
-                    <div class="collection-info">
-                        <h3>NOVA 001</h3>
-                        <p>(Black shimmer dress with gloves)<br>
-                        A captivating shimmer black gown with a deep halter neckline, perfectly paired with elegant opera gloves.<br>
-                        This look is the definition of vintage glamour reinvented</p>
-                    </div>
-                </div>
-
-                <div class="collection-item scroll-reveal" data-category="nova-002">
-                    <div class="collection-image-gallery">
-                        <div class="gallery-main-image">
-                            <img src="images/nova-002-1.jpg" alt="Nova 002">
-                            <img src="images/nova-002-2.jpg" alt="Nova 002">
-                        </div>
-                        <div class="gallery-nav">
-                            <button class="gallery-prev">‹</button>
-                            <button class="gallery-next">›</button>
-                        </div>
-                        <div class="collection-overlay">
-                            <button class="view-btn">View Details</button>
-                        </div>
-                    </div>
-                    <div class="collection-info">
-                        <h3>NOVA 002</h3>
-                        <p>( ruffled Jumpsuit set)<br>
-                        A vibrant burnt orange ensemble featuring a deep-V neckline, flowy wide-leg trousers, and a dramatic, multi-tiered ruffled jacket. This piece is beautiful, and unforgettable</p>
-                    </div>
-                </div>
-
-                <div class="collection-item scroll-reveal" data-category="tiara">
-                    <div class="collection-image-gallery">
-                        <div class="gallery-main-image">
-                            <img src="images/tiara-1.jpg" alt="Tiara Dress">
-                            <img src="images/tiara-2.jpg" alt="Tiara Dress">
-                        </div>
-                        <div class="gallery-nav">
-                            <button class="gallery-prev">‹</button>
-                            <button class="gallery-next">›</button>
-                        </div>
-                        <div class="collection-overlay">
-                            <button class="view-btn">View Details</button>
-                        </div>
-                    </div>
-                    <div class="collection-info">
-                        <h3>TIARA DRESS</h3>
-                        <p>A whisper of timeless charm<br>
-                        An exquisite white dress with a graceful shear overlay</p>
-                    </div>
-                </div>
-
-                <div class="collection-item scroll-reveal" data-category="ripple">
-                    <div class="collection-image-gallery">
-                        <div class="gallery-main-image">
-                            <img src="images/ripple-1.jpg" alt="The Ripple Dress">
-                            <img src="images/ripple-2.jpg" alt="The Ripple Dress">
-                        </div>
-                        <div class="gallery-nav">
-                            <button class="gallery-prev">‹</button>
-                            <button class="gallery-next">›</button>
-                        </div>
-                        <div class="collection-overlay">
-                            <button class="view-btn">View Details</button>
-                        </div>
-                    </div>
-                    <div class="collection-info">
-                        <h3>THE RIPPLE DRESS</h3>
-                        <p>Sculptural sophistication and smooth motion.<br>
-                        A sleek, long-sleeve black mermaid gown that perfectly contours the silhouette. A modern take on red-carpet glamour</p>
-                    </div>
-                </div>
-
-                <div class="collection-item scroll-reveal" data-category="bloom">
-                    <div class="collection-image-gallery">
-                        <div class="gallery-main-image">
-                            <img src="images/bloom-1.jpg" alt="Bloom Dress">
-                            <img src="images/bloom-2.jpg" alt="Bloom Dress">
-                        </div>
-                        <div class="gallery-nav">
-                            <button class="gallery-prev">‹</button>
-                            <button class="gallery-next">›</button>
-                        </div>
-                        <div class="collection-overlay">
-                            <button class="view-btn">View Details</button>
-                        </div>
-                    </div>
-                    <div class="collection-info">
-                        <h3>BLOOM DRESS</h3>
-                        <p>(white Two piece with slit skirt)<br>
-                        A breathtaking ethereal white two-piece set featuring a chic bandeau crop top and a high-slit, dramatically flowing satin skirt</p>
-                    </div>
-                </div>
-
-                <div class="collection-item scroll-reveal" data-category="velora">
-                    <div class="collection-image-gallery">
-                        <div class="gallery-main-image">
-                            <img src="images/velora-1.jpg" alt="Velora Dress">
-                            <img src="images/velora-2.jpg" alt="Velora Dress">
-                        </div>
-                        <div class="gallery-nav">
-                            <button class="gallery-prev">‹</button>
-                            <button class="gallery-next">›</button>
-                        </div>
-                        <div class="collection-overlay">
-                            <button class="view-btn">View Details</button>
-                        </div>
-                    </div>
-                    <div class="collection-info">
-                        <h3>VELORA DRESS</h3>
-                        <p>Luxurious velvet for a majestic entrance.<br>
-                        A timeless black velvet gown featuring a dramatic one-shoulder detail and an alluring thigh-high slit. This dress embodies effortless elegance for any exclusive event</p>
-                    </div>
-                </div>
-
-                <div class="collection-item scroll-reveal" data-category="coral-cascade">
-                    <div class="collection-image-gallery">
-                        <div class="gallery-main-image">
-                            <img src="images/coral-cascade-1.jpg" alt="Coral Cascade">
-                            <img src="images/coral-cascade-2.jpg" alt="Coral Cascade">
-                        </div>
-                        <div class="gallery-nav">
-                            <button class="gallery-prev">‹</button>
-                            <button class="gallery-next">›</button>
-                        </div>
-                        <div class="collection-overlay">
-                            <button class="view-btn">View Details</button>
-                        </div>
-                    </div>
-                    <div class="collection-info">
-                        <h3>CORAL CASCADE</h3>
-                        <p>A breathtaking wave of soft, flowing grace.<br>
-                        An enchanting pink ombre gown with a gracefully draped silhouette, featuring a flowing cape-like detail that creates a captivating movement.</p>
-                    </div>
-                </div>
-
-                <div class="collection-item scroll-reveal" data-category="noir">
-                    <div class="collection-image-gallery">
-                        <div class="gallery-main-image">
-                            <img src="images/noir-1.jpg" alt="Noir">
-                            <img src="images/noir-2.jpg" alt="Noir">
-                        </div>
-                        <div class="gallery-nav">
-                            <button class="gallery-prev">‹</button>
-                            <button class="gallery-next">›</button>
-                        </div>
-                        <div class="collection-overlay">
-                            <button class="view-btn">View Details</button>
-                        </div>
-                    </div>
-                    <div class="collection-info">
-                        <h3>NOIR</h3>
-                        <p>A dramatic black lace corset gown featuring intricate detailing and a high slit, accessorized with elegant lace opera gloves.</p>
-                    </div>
-                </div>
-
-                <div class="collection-item scroll-reveal" data-category="olive-opulence">
-                    <div class="collection-image-gallery">
-                        <div class="gallery-main-image">
-                            <img src="images/olive-opulence-1.jpg" alt="Olive Opulence">
-                            <img src="images/olive-opulence-2.jpg" alt="Olive Opulence">
-                        </div>
-                        <div class="gallery-nav">
-                            <button class="gallery-prev">‹</button>
-                            <button class="gallery-next">›</button>
-                        </div>
-                        <div class="collection-overlay">
-                            <button class="view-btn">View Details</button>
-                        </div>
-                    </div>
-                    <div class="collection-info">
-                        <h3>OLIVE OPULENCE</h3>
-                        <p>A captivating olive green dress with elegant ruching, beautifully adorned with intricate gold floral embellishments.</p>
-                    </div>
-                </div>
-
-                <div class="collection-item scroll-reveal" data-category="emerald-bloom">
-                    <div class="collection-image-gallery">
-                        <div class="gallery-main-image">
-                            <img src="images/emerald-bloom-1.jpg" alt="Emerald Bloom">
-                            <img src="images/emerald-bloom-2.jpg" alt="Emerald Bloom">
-                        </div>
-                        <div class="gallery-nav">
-                            <button class="gallery-prev">‹</button>
-                            <button class="gallery-next">›</button>
-                        </div>
-                        <div class="collection-overlay">
-                            <button class="view-btn">View Details</button>
-                        </div>
-                    </div>
-                    <div class="collection-info">
-                        <h3>EMERALD BLOOM</h3>
-                        <p><strong>Regal elegance.</strong><br>
-                        Stunning emerald green and white brocade strapless dress, perfectly paired with a matching emerald coat. A look that exudes elegance.</p>
-                    </div>
-                </div>
-
-                <div class="collection-item scroll-reveal" data-category="ethereal">
-                    <div class="collection-image-gallery">
-                        <div class="gallery-main-image">
-                            <img src="images/ethereal-1.jpg" alt="Ethereal">
-                            <img src="images/ethereal-2.jpg" alt="Ethereal">
-                        </div>
-                        <div class="gallery-nav">
-                            <button class="gallery-prev">‹</button>
-                            <button class="gallery-next">›</button>
-                        </div>
-                        <div class="collection-overlay">
-                            <button class="view-btn">View Details</button>
-                        </div>
-                    </div>
-                    <div class="collection-info">
-                        <h3>ETHEREAL</h3>
-                        <p>The endless sky and the murmurs of the water gave birth to this design<br>
-                        It danced with a glimpses of emerald elegance, adorned with glittering orbs and acrylic paint<br>
-                        Every step reveals a story of nature's beauty.</p>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="cta-section">
-                <h2>Interested in a Custom Piece?</h2>
-                <p>Let's create something uniquely yours. Book a consultation to discuss your vision.</p>
-                <a href="consultation.html" class="primary-button">Book a Consultation</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-column">
-                <h3>Get in Touch</h3>
-                <p>Hariikestyles@gmail.com</p>
-                <p>Book a Consultation</p>
-            </div>
-            
-            <div class="footer-column">
-                <h3>Quick Links</h3>
-                <a href="about.html">About us</a>
-                <a href="services.html">Services</a>
-                <a href="collection.html">Our Collection</a>
-                <a href="consultation.html">Book a Consultation</a>
-            </div>
-            
-            <div class="footer-column">
-                <h3>Legal</h3>
-                <a href="privacy.html">Privacy</a>
-                <a href="terms.html">Terms and Conditions</a>
-                <a href="contact.html">Contact Us</a>
-            </div>
-        </div>
-        
-        <div class="footer-bottom">
-            <p>Copyright © 2025 Hariike Styles</p>
-            <p>Website designed by <a href="https://www.instagram.com/billionairechurchboy_?igsh=YnJkaGNmNDdtamp1&utm_source=qr" target="_blank" rel="noopener noreferrer">BCB Global Hub</a></p>
-        </div>
-    </footer>
-
-    <!-- Collection Details Modal -->
-    <div id="collectionModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <div class="modal-header">
-                <h2 id="modalCollectionName"></h2>
-                <p class="modal-year">Year 2024</p>
-            </div>
-            <div class="modal-body">
-                <div class="collection-description">
-                    <p>Discover the elegance and craftsmanship of this exclusive piece from our 2024 collection. Each item is carefully designed and crafted to perfection.</p>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button class="modal-close-btn">Close</button>
-            </div>
+    <div class="menu" id="menu" inert>
+        <div class="menu__bg"></div>
+        <nav class="menu__nav" aria-label="Mobile">
+            <a href="index.html" class="menu__link"><span class="menu__num">01</span><span class="menu__text">Home</span></a>
+<a href="about.html" class="menu__link"><span class="menu__num">02</span><span class="menu__text">About</span></a>
+<a href="services.html" class="menu__link"><span class="menu__num">03</span><span class="menu__text">Services</span></a>
+<a href="collection.html" class="menu__link" aria-current="page"><span class="menu__num">04</span><span class="menu__text">Collection</span></a>
+<a href="consultation.html" class="menu__link"><span class="menu__num">05</span><span class="menu__text">Consultation</span></a>
+<a href="contact.html" class="menu__link"><span class="menu__num">06</span><span class="menu__text">Contact</span></a>
+        </nav>
+        <div class="menu__foot">
+            <a href="mailto:Hariikestyles@gmail.com">Hariikestyles@gmail.com</a>
+            <a href="https://www.instagram.com/hariikestyles" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
         </div>
     </div>
 
+    <main id="main">
+
+        <section class="page-hero page-hero--short">
+            <div class="page-hero__media" data-hero-media>
+                <img src="images/collection-banner.jpg" alt="" fetchpriority="high">
+            </div>
+            <div class="container page-hero__inner">
+                <p class="crumb" data-reveal><a href="index.html">Home</a> &nbsp;/&nbsp; Collection</p>
+                <h1 class="h1" style="margin-top:20px;max-width:16ch" data-split>Explore our <em>lookbook.</em></h1>
+                <div class="page-hero__meta">
+                    <p data-reveal>Twelve pieces from the 2024 collection — each designed and crafted to perfection. Select any look for details.</p><span class="crumb" data-reveal>12 pieces · 2024</span>
+                </div>
+            </div>
+        </section>
+
+        <div class="index-bar">
+            <div class="container index-bar__inner">
+                <span class="index-bar__label">Index</span>
+                <div class="chips" role="toolbar" aria-label="Jump to a piece"><button class="chip is-active" type="button" data-jump="top">All</button><button class="chip" type="button" data-jump="summer-rain">Summer Rain</button><button class="chip" type="button" data-jump="nova-001">Nova 001</button><button class="chip" type="button" data-jump="nova-002">Nova 002</button><button class="chip" type="button" data-jump="tiara">Tiara</button><button class="chip" type="button" data-jump="ripple">The Ripple</button><button class="chip" type="button" data-jump="bloom">Bloom</button><button class="chip" type="button" data-jump="velora">Velora</button><button class="chip" type="button" data-jump="coral-cascade">Coral Cascade</button><button class="chip" type="button" data-jump="noir">Noir</button><button class="chip" type="button" data-jump="olive-opulence">Olive Opulence</button><button class="chip" type="button" data-jump="emerald-bloom">Emerald Bloom</button><button class="chip" type="button" data-jump="ethereal">Ethereal</button></div>
+            </div>
+        </div>
+
+        <section class="section" style="padding-top:clamp(56px,7vw,110px)">
+            <div class="container">
+                <div class="lookbook">
+                    <article class="look" id="summer-rain" data-look>
+                        <button class="look__btn" type="button" data-open="0" data-cursor="View" aria-label="View Summer Rain details">
+                            <div class="frame" data-clip>
+                                <img src="images/summer-rain-1.jpg" alt="Summer Rain — Floral embellished dress" loading="lazy" decoding="async">
+                                <img src="images/summer-rain-2.jpg" alt="" loading="lazy" decoding="async">
+                            </div>
+                            <div class="look__meta">
+                                <span class="look__idx">01</span>
+                                <span class="look__name">Summer Rain</span>
+                                <span class="look__tag">Floral embellished dress</span>
+                            </div>
+                        </button>
+                        <p class="look__desc">Bold color meets feminine drama. A stunning sunshine yellow gown featuring an organza balloon-sleeve shawl and a striking vertical cascade of floral appliqués.</p>
+                    </article>
+
+                    <article class="look" id="nova-001" data-look>
+                        <button class="look__btn" type="button" data-open="1" data-cursor="View" aria-label="View Nova 001 details">
+                            <div class="frame" data-clip>
+                                <img src="images/nova-001-1.jpg" alt="Nova 001 — Black shimmer dress with gloves" loading="lazy" decoding="async">
+                                <img src="images/nova-001-2.jpg" alt="" loading="lazy" decoding="async">
+                            </div>
+                            <div class="look__meta">
+                                <span class="look__idx">02</span>
+                                <span class="look__name">Nova 001</span>
+                                <span class="look__tag">Black shimmer dress with gloves</span>
+                            </div>
+                        </button>
+                        <p class="look__desc">A captivating shimmer black gown with a deep halter neckline, perfectly paired with elegant opera gloves. The definition of vintage glamour, reinvented.</p>
+                    </article>
+
+                    <article class="look" id="nova-002" data-look>
+                        <button class="look__btn" type="button" data-open="2" data-cursor="View" aria-label="View Nova 002 details">
+                            <div class="frame" data-clip>
+                                <img src="images/nova-002-1.jpg" alt="Nova 002 — Ruffled jumpsuit set" loading="lazy" decoding="async">
+                                <img src="images/nova-002-2.jpg" alt="" loading="lazy" decoding="async">
+                            </div>
+                            <div class="look__meta">
+                                <span class="look__idx">03</span>
+                                <span class="look__name">Nova 002</span>
+                                <span class="look__tag">Ruffled jumpsuit set</span>
+                            </div>
+                        </button>
+                        <p class="look__desc">A vibrant burnt orange ensemble featuring a deep-V neckline, flowy wide-leg trousers and a dramatic, multi-tiered ruffled jacket. Beautiful, and unforgettable.</p>
+                    </article>
+
+                    <article class="look" id="tiara" data-look>
+                        <button class="look__btn" type="button" data-open="3" data-cursor="View" aria-label="View Tiara details">
+                            <div class="frame" data-clip>
+                                <img src="images/tiara-1.jpg" alt="Tiara — A whisper of timeless charm" loading="lazy" decoding="async">
+                                <img src="images/tiara-2.jpg" alt="" loading="lazy" decoding="async">
+                            </div>
+                            <div class="look__meta">
+                                <span class="look__idx">04</span>
+                                <span class="look__name">Tiara</span>
+                                <span class="look__tag">A whisper of timeless charm</span>
+                            </div>
+                        </button>
+                        <p class="look__desc">An exquisite white dress with a graceful sheer overlay.</p>
+                    </article>
+
+                    <article class="look" id="ripple" data-look>
+                        <button class="look__btn" type="button" data-open="4" data-cursor="View" aria-label="View The Ripple details">
+                            <div class="frame" data-clip>
+                                <img src="images/ripple-1.jpg" alt="The Ripple — Sculptural sophistication" loading="lazy" decoding="async">
+                                <img src="images/ripple-2.jpg" alt="" loading="lazy" decoding="async">
+                            </div>
+                            <div class="look__meta">
+                                <span class="look__idx">05</span>
+                                <span class="look__name">The Ripple</span>
+                                <span class="look__tag">Sculptural sophistication</span>
+                            </div>
+                        </button>
+                        <p class="look__desc">A sleek, long-sleeve black mermaid gown that perfectly contours the silhouette, made for smooth motion. A modern take on red-carpet glamour.</p>
+                    </article>
+
+                    <article class="look" id="bloom" data-look>
+                        <button class="look__btn" type="button" data-open="5" data-cursor="View" aria-label="View Bloom details">
+                            <div class="frame" data-clip>
+                                <img src="images/bloom-1.jpg" alt="Bloom — White two-piece with slit skirt" loading="lazy" decoding="async">
+                                <img src="images/bloom-2.jpg" alt="" loading="lazy" decoding="async">
+                            </div>
+                            <div class="look__meta">
+                                <span class="look__idx">06</span>
+                                <span class="look__name">Bloom</span>
+                                <span class="look__tag">White two-piece with slit skirt</span>
+                            </div>
+                        </button>
+                        <p class="look__desc">A breathtaking ethereal white two-piece set featuring a chic bandeau crop top and a high-slit, dramatically flowing satin skirt.</p>
+                    </article>
+
+                    <article class="look" id="velora" data-look>
+                        <button class="look__btn" type="button" data-open="6" data-cursor="View" aria-label="View Velora details">
+                            <div class="frame" data-clip>
+                                <img src="images/velora-1.jpg" alt="Velora — Luxurious velvet" loading="lazy" decoding="async">
+                                <img src="images/velora-2.jpg" alt="" loading="lazy" decoding="async">
+                            </div>
+                            <div class="look__meta">
+                                <span class="look__idx">07</span>
+                                <span class="look__name">Velora</span>
+                                <span class="look__tag">Luxurious velvet</span>
+                            </div>
+                        </button>
+                        <p class="look__desc">A timeless black velvet gown featuring a dramatic one-shoulder detail and an alluring thigh-high slit — effortless elegance for a majestic entrance at any exclusive event.</p>
+                    </article>
+
+                    <article class="look" id="coral-cascade" data-look>
+                        <button class="look__btn" type="button" data-open="7" data-cursor="View" aria-label="View Coral Cascade details">
+                            <div class="frame" data-clip>
+                                <img src="images/coral-cascade-1.jpg" alt="Coral Cascade — A wave of soft, flowing grace" loading="lazy" decoding="async">
+                                <img src="images/coral-cascade-2.jpg" alt="" loading="lazy" decoding="async">
+                            </div>
+                            <div class="look__meta">
+                                <span class="look__idx">08</span>
+                                <span class="look__name">Coral Cascade</span>
+                                <span class="look__tag">A wave of soft, flowing grace</span>
+                            </div>
+                        </button>
+                        <p class="look__desc">An enchanting pink ombré gown with a gracefully draped silhouette, featuring a flowing cape-like detail that creates captivating movement.</p>
+                    </article>
+
+                    <article class="look" id="noir" data-look>
+                        <button class="look__btn" type="button" data-open="8" data-cursor="View" aria-label="View Noir details">
+                            <div class="frame" data-clip>
+                                <img src="images/noir-1.jpg" alt="Noir — Black lace corset gown" loading="lazy" decoding="async">
+                                <img src="images/noir-2.jpg" alt="" loading="lazy" decoding="async">
+                            </div>
+                            <div class="look__meta">
+                                <span class="look__idx">09</span>
+                                <span class="look__name">Noir</span>
+                                <span class="look__tag">Black lace corset gown</span>
+                            </div>
+                        </button>
+                        <p class="look__desc">A dramatic black lace corset gown featuring intricate detailing and a high slit, accessorised with elegant lace opera gloves.</p>
+                    </article>
+
+                    <article class="look" id="olive-opulence" data-look>
+                        <button class="look__btn" type="button" data-open="9" data-cursor="View" aria-label="View Olive Opulence details">
+                            <div class="frame" data-clip>
+                                <img src="images/olive-opulence-1.jpg" alt="Olive Opulence — Ruched olive & gold" loading="lazy" decoding="async">
+                                <img src="images/olive-opulence-2.jpg" alt="" loading="lazy" decoding="async">
+                            </div>
+                            <div class="look__meta">
+                                <span class="look__idx">10</span>
+                                <span class="look__name">Olive Opulence</span>
+                                <span class="look__tag">Ruched olive & gold</span>
+                            </div>
+                        </button>
+                        <p class="look__desc">A captivating olive green dress with elegant ruching, beautifully adorned with intricate gold floral embellishments.</p>
+                    </article>
+
+                    <article class="look" id="emerald-bloom" data-look>
+                        <button class="look__btn" type="button" data-open="10" data-cursor="View" aria-label="View Emerald Bloom details">
+                            <div class="frame" data-clip>
+                                <img src="images/emerald-bloom-1.jpg" alt="Emerald Bloom — Regal elegance" loading="lazy" decoding="async">
+                                <img src="images/emerald-bloom-2.jpg" alt="" loading="lazy" decoding="async">
+                            </div>
+                            <div class="look__meta">
+                                <span class="look__idx">11</span>
+                                <span class="look__name">Emerald Bloom</span>
+                                <span class="look__tag">Regal elegance</span>
+                            </div>
+                        </button>
+                        <p class="look__desc">A stunning emerald green and white brocade strapless dress, perfectly paired with a matching emerald coat. A look that exudes elegance.</p>
+                    </article>
+
+                    <article class="look" id="ethereal" data-look>
+                        <button class="look__btn" type="button" data-open="11" data-cursor="View" aria-label="View Ethereal details">
+                            <div class="frame" data-clip>
+                                <img src="images/ethereal-1.jpg" alt="Ethereal — Born of sky and water" loading="lazy" decoding="async">
+                                <img src="images/ethereal-2.jpg" alt="" loading="lazy" decoding="async">
+                            </div>
+                            <div class="look__meta">
+                                <span class="look__idx">12</span>
+                                <span class="look__name">Ethereal</span>
+                                <span class="look__tag">Born of sky and water</span>
+                            </div>
+                        </button>
+                        <p class="look__desc">The endless sky and the murmurs of the water gave birth to this design. It dances with glimpses of emerald elegance, adorned with glittering orbs and acrylic paint — every step reveals a story of nature’s beauty.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <dialog class="lightbox" data-lightbox aria-labelledby="lb-title">
+            <div class="lightbox__panel">
+                <div class="lightbox__media">
+                    <div class="frame"><img data-lb-img="0" src="" alt=""></div>
+                    <div class="frame"><img data-lb-img="1" src="" alt=""></div>
+                </div>
+                <div class="lightbox__body">
+                    <div>
+                        <span class="eyebrow">The 2024 collection</span>
+                        <h2 class="lightbox__title" id="lb-title" data-lb-title></h2>
+                        <p class="lightbox__tag" data-lb-tag></p>
+                        <p class="lightbox__desc" data-lb-desc></p>
+                    </div>
+                    <div>
+                        <div class="lightbox__actions">
+                            <a href="consultation.html" class="btn btn--gold" data-magnetic><span>Book a consultation</span><svg class="btn__arrow" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="1.2"/></svg></a>
+                            <a href="#" class="btn btn--ghost" data-lb-enquire><span>Enquire by email</span></a>
+                        </div>
+                        <div class="lightbox__pager" style="margin-top:32px">
+                            <button class="pager-btn" type="button" data-lb-prev><svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M13 7H1M6 2L1 7l5 5" stroke="currentColor" stroke-width="1.2"/></svg> Previous</button>
+                            <span class="lightbox__count"><b data-lb-index>01</b> / 12</span>
+                            <button class="pager-btn" type="button" data-lb-next>Next <svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="1.2"/></svg></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="lightbox__close" type="button" data-lb-close>Close <span aria-hidden="true">✕</span></button>
+        </dialog>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__cta">
+                <div>
+                    <span class="eyebrow" data-reveal>Begin your piece</span>
+                    <h2 class="h1" style="margin-top:24px" data-split>Let’s create something <em>uniquely yours.</em></h2>
+                </div>
+                <a href="consultation.html" class="orb" data-magnetic data-cursor-hide><span>Book a<br>consultation</span></a>
+            </div>
+            <div class="footer__grid">
+                <div class="footer__col">
+                    <p class="footer__intro">Bespoke, bridal &amp; aso-ebi couture — designing timeless elegance, one piece at a time.</p>
+                </div>
+                <div class="footer__col">
+                    <h3>Get in touch</h3>
+                    <a href="mailto:Hariikestyles@gmail.com">Hariikestyles@gmail.com</a>
+                    <a href="consultation.html">Book a consultation</a>
+                    <a href="https://www.instagram.com/hariikestyles" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+                </div>
+                <div class="footer__col">
+                    <h3>Explore</h3>
+                    <a href="about.html">About us</a>
+                    <a href="services.html">Services</a>
+                    <a href="collection.html">Our collection</a>
+                    <a href="contact.html">Contact us</a>
+                </div>
+                <div class="footer__col">
+                    <h3>Legal</h3>
+                    <a href="privacy.html">Privacy</a>
+                    <a href="terms.html">Terms &amp; conditions</a>
+                </div>
+            </div>
+        </div>
+        <span class="footer__mark" aria-hidden="true" data-mark>Hariike</span>
+        <div class="container">
+            <div class="footer__bottom">
+                <p>© <span data-year>2025</span> Hariike Styles. All rights reserved.</p>
+                <p>Website designed by <a href="https://www.instagram.com/billionairechurchboy_?igsh=YnJkaGNmNDdtamp1&amp;utm_source=qr" target="_blank" rel="noopener noreferrer">BCB Global Hub</a></p>
+                <a href="#main" class="to-top" data-to-top>Back to top <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M6 11V1M1 6l5-5 5 5" stroke="currentColor" stroke-width="1.2"/></svg></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
     <script src="script.js"></script>
-    <script src="collection.js"></script>
 </body>
 </html>
-

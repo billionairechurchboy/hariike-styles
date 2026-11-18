@@ -3,170 +3,204 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Hariike Styles</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="pages.css">
+    <title>Privacy Policy — Hariike Styles</title>
+    <meta name="description" content="Hariike Styles privacy policy.">
+    <meta name="theme-color" content="#0e0b09">
+    <meta property="og:title" content="Privacy Policy — Hariike Styles">
+    <meta property="og:description" content="Hariike Styles privacy policy.">
+    <meta property="og:image" content="images/Banner1.jpg">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="apple-touch-icon" href="images/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        (function (d) {
+            var s = function (k) { try { return sessionStorage.getItem(k); } catch (e) { return null; } };
+            d.classList.add('js');
+            if (s('hs-seen')) d.classList.add('seen');
+            if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                d.classList.add('motion');
+                if (s('hs-transition')) d.classList.add('arriving');
+                setTimeout(function () { if (!window.__hsReady) { d.classList.remove('motion', 'arriving'); d.classList.add('no-motion'); } }, 4000);
+            }
+        })(document.documentElement);
+    </script>
 </head>
-<body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-links left-nav">
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="about.html" class="nav-link">About</a>
-                <a href="services.html" class="nav-link">Our Services</a>
+<body class="">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="curtain" aria-hidden="true"><img src="images/logo.png" alt="" width="1290" height="607"></div>
+    <div class="cursor" aria-hidden="true"><div class="cursor__dot"></div><div class="cursor__ring"><span class="cursor__label"></span></div></div>
+
+    <header class="site-header" data-header>
+        <div class="header-inner">
+            <nav class="nav nav--left" aria-label="Primary">
+                <a href="about.html" class="nav-link"><span><i data-text="About">About</i></span></a>
+<a href="services.html" class="nav-link"><span><i data-text="Services">Services</i></span></a>
+<a href="collection.html" class="nav-link"><span><i data-text="Collection">Collection</i></span></a>
+            </nav>
+            <a href="index.html" class="brand" aria-label="Hariike Styles — home">
+                <img src="images/logo.png" alt="Hariike Styles" width="1290" height="607">
+            </a>
+            <div class="nav nav--right">
+                <a href="contact.html" class="nav-link"><span><i data-text="Contact">Contact</i></span></a>
+                <a href="consultation.html" class="btn btn--gold btn--sm" data-magnetic><span>Book a consultation</span></a>
             </div>
-            
-            <div class="logo-container">
-                <img src="images/logo.png" alt="Hariike Styles Logo" class="logo">
-            </div>
-            
-            <div class="nav-links right-nav">
-                <a href="collection.html" class="nav-link">Collection</a>
-                <a href="consultation.html" class="nav-link">Book a Consultation</a>
-            </div>
-            
-            <!-- Mobile Menu Toggle -->
-            <button class="mobile-menu-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu">
+                <span class="menu-toggle__label">Menu</span>
+                <span class="menu-toggle__lines" aria-hidden="true"><i></i><i></i></span>
             </button>
         </div>
-        
-        <!-- Mobile Menu -->
-        <div class="mobile-menu">
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="about.html" class="nav-link">About</a>
-            <a href="services.html" class="nav-link">Our Services</a>
-            <a href="collection.html" class="nav-link">Collection</a>
-            <a href="consultation.html" class="nav-link">Book a Consultation</a>
+    </header>
+
+    <div class="menu" id="menu" inert>
+        <div class="menu__bg"></div>
+        <nav class="menu__nav" aria-label="Mobile">
+            <a href="index.html" class="menu__link"><span class="menu__num">01</span><span class="menu__text">Home</span></a>
+<a href="about.html" class="menu__link"><span class="menu__num">02</span><span class="menu__text">About</span></a>
+<a href="services.html" class="menu__link"><span class="menu__num">03</span><span class="menu__text">Services</span></a>
+<a href="collection.html" class="menu__link"><span class="menu__num">04</span><span class="menu__text">Collection</span></a>
+<a href="consultation.html" class="menu__link"><span class="menu__num">05</span><span class="menu__text">Consultation</span></a>
+<a href="contact.html" class="menu__link"><span class="menu__num">06</span><span class="menu__text">Contact</span></a>
+        </nav>
+        <div class="menu__foot">
+            <a href="mailto:Hariikestyles@gmail.com">Hariikestyles@gmail.com</a>
+            <a href="https://www.instagram.com/hariikestyles" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
         </div>
-    </nav>
-
-    <!-- Legal Content -->
-    <div class="legal-content">
-        <h1>Privacy Policy</h1>
-        <p class="last-updated">Last Updated: October 27, 2025</p>
-
-        <h2>Introduction</h2>
-        <p>
-            At Hariike Styles, we are committed to protecting your privacy and ensuring the security of your personal information. 
-            This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website 
-            or use our services.
-        </p>
-
-        <h2>Information We Collect</h2>
-        <p>We collect information that you provide directly to us, including:</p>
-        <ul>
-            <li>Name, email address, phone number, and other contact information</li>
-            <li>Consultation requests and service preferences</li>
-            <li>Payment information for services rendered</li>
-            <li>Measurements and fitting information for custom orders</li>
-            <li>Communication preferences and feedback</li>
-        </ul>
-
-        <h2>How We Use Your Information</h2>
-        <p>We use the information we collect to:</p>
-        <ul>
-            <li>Process your consultation requests and service bookings</li>
-            <li>Communicate with you about your orders and appointments</li>
-            <li>Provide personalized service and recommendations</li>
-            <li>Send you updates about our collections and special offers (with your consent)</li>
-            <li>Improve our website and services</li>
-            <li>Comply with legal obligations</li>
-        </ul>
-
-        <h2>Information Sharing and Disclosure</h2>
-        <p>
-            We do not sell, trade, or rent your personal information to third parties. We may share your information only in the 
-            following circumstances:
-        </p>
-        <ul>
-            <li>With service providers who assist us in operating our business (e.g., payment processors)</li>
-            <li>When required by law or to protect our rights</li>
-            <li>With your explicit consent</li>
-        </ul>
-
-        <h2>Data Security</h2>
-        <p>
-            We implement appropriate technical and organizational measures to protect your personal information against unauthorized 
-            access, alteration, disclosure, or destruction. However, no method of transmission over the Internet is 100% secure, 
-            and we cannot guarantee absolute security.
-        </p>
-
-        <h2>Your Rights</h2>
-        <p>You have the right to:</p>
-        <ul>
-            <li>Access the personal information we hold about you</li>
-            <li>Request correction of inaccurate information</li>
-            <li>Request deletion of your personal information</li>
-            <li>Opt-out of marketing communications</li>
-            <li>Object to processing of your personal information</li>
-        </ul>
-
-        <h2>Cookies and Tracking Technologies</h2>
-        <p>
-            Our website uses cookies and similar tracking technologies to enhance your browsing experience and analyze site traffic. 
-            You can control cookie settings through your browser preferences.
-        </p>
-
-        <h2>Children's Privacy</h2>
-        <p>
-            Our services are not directed to individuals under the age of 18. We do not knowingly collect personal information 
-            from children.
-        </p>
-
-        <h2>Changes to This Privacy Policy</h2>
-        <p>
-            We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy 
-            Policy on this page and updating the "Last Updated" date.
-        </p>
-
-        <h2>Contact Us</h2>
-        <p>
-            If you have any questions about this Privacy Policy or our data practices, please contact us at:
-        </p>
-        <p>
-            <strong>Email:</strong> Hariikestyles@gmail.com
-        </p>
     </div>
 
-    <!-- Footer -->
+    <main id="main">
+
+        <section class="page-hero page-hero--short">
+            <div class="container page-hero__inner">
+                <p class="crumb" data-reveal><a href="index.html">Home</a> &nbsp;/&nbsp; Privacy</p>
+                <h1 class="h1" style="margin-top:20px;max-width:16ch" data-split>Privacy <em>policy.</em></h1>
+                <div class="page-hero__meta">
+                    <p data-reveal>How we collect, use and safeguard your information when you visit our website or use our services.</p><span class="crumb" data-reveal>Last Updated: October 27, 2025</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--light">
+            <div class="container legal">
+                <nav class="toc" aria-label="On this page" data-toc>
+                    <span class="toc__label">On this page</span>
+                    <a href="#introduction">Introduction</a>
+<a href="#information-we-collect">Information We Collect</a>
+<a href="#how-we-use-your-information">How We Use Your Information</a>
+<a href="#information-sharing-and-disclosure">Information Sharing and Disclosure</a>
+<a href="#data-security">Data Security</a>
+<a href="#your-rights">Your Rights</a>
+<a href="#cookies-and-tracking-technologies">Cookies and Tracking Technologies</a>
+<a href="#children-s-privacy">Children's Privacy</a>
+<a href="#changes-to-this-privacy-policy">Changes to This Privacy Policy</a>
+<a href="#contact-us">Contact Us</a>
+                </nav>
+                <article class="legal-body">
+                    <h2 id="introduction">Introduction</h2>
+                    <p> At Hariike Styles, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services. </p>
+                    <h2 id="information-we-collect">Information We Collect</h2>
+                    <p>We collect information that you provide directly to us, including:</p>
+                    <ul>
+                    <li>Name, email address, phone number, and other contact information</li>
+                    <li>Consultation requests and service preferences</li>
+                    <li>Payment information for services rendered</li>
+                    <li>Measurements and fitting information for custom orders</li>
+                    <li>Communication preferences and feedback</li>
+                    </ul>
+                    <h2 id="how-we-use-your-information">How We Use Your Information</h2>
+                    <p>We use the information we collect to:</p>
+                    <ul>
+                    <li>Process your consultation requests and service bookings</li>
+                    <li>Communicate with you about your orders and appointments</li>
+                    <li>Provide personalized service and recommendations</li>
+                    <li>Send you updates about our collections and special offers (with your consent)</li>
+                    <li>Improve our website and services</li>
+                    <li>Comply with legal obligations</li>
+                    </ul>
+                    <h2 id="information-sharing-and-disclosure">Information Sharing and Disclosure</h2>
+                    <p> We do not sell, trade, or rent your personal information to third parties. We may share your information only in the following circumstances: </p>
+                    <ul>
+                    <li>With service providers who assist us in operating our business (e.g., payment processors)</li>
+                    <li>When required by law or to protect our rights</li>
+                    <li>With your explicit consent</li>
+                    </ul>
+                    <h2 id="data-security">Data Security</h2>
+                    <p> We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the Internet is 100% secure, and we cannot guarantee absolute security. </p>
+                    <h2 id="your-rights">Your Rights</h2>
+                    <p>You have the right to:</p>
+                    <ul>
+                    <li>Access the personal information we hold about you</li>
+                    <li>Request correction of inaccurate information</li>
+                    <li>Request deletion of your personal information</li>
+                    <li>Opt-out of marketing communications</li>
+                    <li>Object to processing of your personal information</li>
+                    </ul>
+                    <h2 id="cookies-and-tracking-technologies">Cookies and Tracking Technologies</h2>
+                    <p> Our website uses cookies and similar tracking technologies to enhance your browsing experience and analyze site traffic. You can control cookie settings through your browser preferences. </p>
+                    <h2 id="children-s-privacy">Children's Privacy</h2>
+                    <p> Our services are not directed to individuals under the age of 18. We do not knowingly collect personal information from children. </p>
+                    <h2 id="changes-to-this-privacy-policy">Changes to This Privacy Policy</h2>
+                    <p> We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date. </p>
+                    <h2 id="contact-us">Contact Us</h2>
+                    <p> If you have any questions about this Privacy Policy or our data practices, please contact us at: </p>
+                    <p>
+                    <strong>Email:</strong>
+                    <a href="mailto:Hariikestyles@gmail.com">Hariikestyles@gmail.com</a>
+                    </p>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
     <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-column">
-                <h3>Get in Touch</h3>
-                <p>Hariikestyles@gmail.com</p>
-                <p>Book a Consultation</p>
+        <div class="container">
+            <div class="footer__cta">
+                <div>
+                    <span class="eyebrow" data-reveal>Begin your piece</span>
+                    <h2 class="h1" style="margin-top:24px" data-split>Let’s create something <em>uniquely yours.</em></h2>
+                </div>
+                <a href="consultation.html" class="orb" data-magnetic data-cursor-hide><span>Book a<br>consultation</span></a>
             </div>
-            
-            <div class="footer-column">
-                <h3>Quick Links</h3>
-                <a href="about.html">About us</a>
-                <a href="services.html">Services</a>
-                <a href="collection.html">Our Collection</a>
-                <a href="consultation.html">Book a Consultation</a>
-            </div>
-            
-            <div class="footer-column">
-                <h3>Legal</h3>
-                <a href="privacy.html">Privacy</a>
-                <a href="terms.html">Terms and Conditions</a>
-                <a href="contact.html">Contact Us</a>
+            <div class="footer__grid">
+                <div class="footer__col">
+                    <p class="footer__intro">Bespoke, bridal &amp; aso-ebi couture — designing timeless elegance, one piece at a time.</p>
+                </div>
+                <div class="footer__col">
+                    <h3>Get in touch</h3>
+                    <a href="mailto:Hariikestyles@gmail.com">Hariikestyles@gmail.com</a>
+                    <a href="consultation.html">Book a consultation</a>
+                    <a href="https://www.instagram.com/hariikestyles" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+                </div>
+                <div class="footer__col">
+                    <h3>Explore</h3>
+                    <a href="about.html">About us</a>
+                    <a href="services.html">Services</a>
+                    <a href="collection.html">Our collection</a>
+                    <a href="contact.html">Contact us</a>
+                </div>
+                <div class="footer__col">
+                    <h3>Legal</h3>
+                    <a href="privacy.html">Privacy</a>
+                    <a href="terms.html">Terms &amp; conditions</a>
+                </div>
             </div>
         </div>
-        
-        <div class="footer-bottom">
-            <p>Copyright © 2025 Hariike Styles</p>
-            <p>Website designed by BCB Global Hub</p>
+        <span class="footer__mark" aria-hidden="true" data-mark>Hariike</span>
+        <div class="container">
+            <div class="footer__bottom">
+                <p>© <span data-year>2025</span> Hariike Styles. All rights reserved.</p>
+                <p>Website designed by <a href="https://www.instagram.com/billionairechurchboy_?igsh=YnJkaGNmNDdtamp1&amp;utm_source=qr" target="_blank" rel="noopener noreferrer">BCB Global Hub</a></p>
+                <a href="#main" class="to-top" data-to-top>Back to top <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M6 11V1M1 6l5-5 5 5" stroke="currentColor" stroke-width="1.2"/></svg></a>
+            </div>
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
-
