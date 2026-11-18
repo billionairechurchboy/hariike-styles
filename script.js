@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Hariike Styles — interactions & motion
+   Hariike Styles: interactions & motion
    GSAP + ScrollTrigger + Lenis, with graceful fallback when unavailable
    or when the visitor prefers reduced motion.
    ========================================================================== */
@@ -602,7 +602,7 @@
         function fill(i) {
             idx = (i + data.length) % data.length;
             var d = data[idx];
-            lbImgs.forEach(function (img, j) { img.src = d.imgs[j] || d.imgs[0]; img.alt = d.name + ' — view ' + (j + 1); });
+            lbImgs.forEach(function (img, j) { img.src = d.imgs[j] || d.imgs[0]; img.alt = d.name + ', view ' + (j + 1); });
             title.textContent = d.name; tag.textContent = d.tag; desc.textContent = d.desc;
             indexEl.textContent = (idx + 1 < 10 ? '0' : '') + (idx + 1);
             enquire.href = 'mailto:Hariikestyles@gmail.com?subject=' + encodeURIComponent('Enquiry: ' + d.name) +
@@ -694,8 +694,8 @@
             if (!ok) { var first = $('.is-invalid input, .is-invalid textarea', form); if (first) first.focus(); return; }
             var d = {};
             fields.forEach(function (f) { d[f.name] = f.value.trim(); });
-            var body = d.message + '\n\n— ' + d.name + '\n' + d.email + (d.phone ? '\n' + d.phone : '');
-            window.location.href = 'mailto:Hariikestyles@gmail.com?subject=' + encodeURIComponent(d.subject + ' — ' + d.name) + '&body=' + encodeURIComponent(body);
+            var body = d.message + '\n\n' + d.name + '\n' + d.email + (d.phone ? '\n' + d.phone : '');
+            window.location.href = 'mailto:Hariikestyles@gmail.com?subject=' + encodeURIComponent(d.subject + ' from ' + d.name) + '&body=' + encodeURIComponent(body);
             form.style.display = 'none';
             success.classList.add('is-visible');
             success.focus();

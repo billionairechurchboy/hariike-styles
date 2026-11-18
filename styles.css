@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Hariike Styles — Design System
+   Hariike Styles: Design System
    Editorial couture: espresso ink, bone ivory, logo gold.
    ========================================================================== */
 
@@ -553,7 +553,7 @@ html:not(.js) .preloader { display: none; }
 }
 .pullquote em { color: var(--gold-2); }
 
-/* Services page — stacking cards */
+/* Services page: stacking cards */
 .stack { display: grid; gap: clamp(24px, 4vh, 48px); }
 .stack-card {
     position: sticky; top: calc(var(--header-h) + 3vh);
